@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<!-- Credits to alecThunder and the-barracks.com for creating the original info table. Updated and redesigned by KoMiKoZa for the Battle Realms Community. -->
+<html>
+<head>
+<title> 
+Battle Realms: Zen Edition | Online Mini Guide
+</title> 
+       
+<link rel = "icon" href =  
+"https://i.imgur.com/8cpGgdK.png" 
+ type = "image/x-icon"> 
+ 
+ <link rel="stylesheet" type="css" href="css/tableclass.css">
+
+<meta name="google-site-verification" content="UY3DaxjNTUISp_BdYXTVp-jeqY-Xp-dVtJjoRDD6guw" />
+<meta property="og:locale" content="en_EN"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Battle Realms Guide: Mini Version (1.58.3 - Zen Edition/Steam)"/>
+<meta property="og:description" content="Online reference with a lot of useful information about Battle Realms and its mechanics."/>
+<meta property="og:image" content="https://i.imgur.com/TMU6V6N.png"/>
+<meta property="og:url" content="https://battlerealms.github.io/miniguide/"/>
+<meta property="og:site_name" content="Battle Realms Goodness"/>
+<meta property="fb:admins" content="komikoza"/>
+<meta property="profile:first_name" content="Denis"/>
+<meta property="profile:last_name" content="Semenovskiy"/>
+<meta property="profile:username" content="KoMiKoZa"/>
+	
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="KoMiKoZa">
+<meta name="twitter:title" content="Battle Realms Guide: Mini Version (1.58.3 - Zen Edition/Steam)">
+<meta name="twitter:description" content="Online reference with a lot of useful information about Battle Realms and its mechanics.">
+<meta name="twitter:image" content="https://i.imgur.com/TMU6V6N.png">
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "VideoGame",
+      "name": "Battle Realms: Zen Edition",
+      "url": "http://battlerealms.com",
+      "image": "https://i.imgur.com/Fanupyc.png",
+      "description": "Battle Realms is a fantasy real-time strategy game inspired by the stories told in Martial Arts movies and oriental mythology. Develop your tiny peasant village into a highly trained and deadly efficient clan of warriors who are ready to die with your name on their lips.",
+      "inLanguage":["English"],
+      },
+      "author":{
+        "@type":"Organization",
+        "name":"Ed Del Castillo",
+    },
+      "publisher":"Ed Del Castillo",
+      "genre":["Real-Time Strategy","3D","Action"],
+      "processorRequirements":"3.2Hz",
+      "memoryRequirements":"1024 MB",
+      "storageRequirements":"1024 MB",
+      "gamePlatform":["PC game"],
+}</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  // Add event listeners to all tab button
+  var tabButtons = document.querySelectorAll('.tab');
+  tabButtons.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+    
+      // Remove glow effect from all tab buttons
+      tabButtons.forEach(function(tab) {
+        tab.classList.remove('active-glow');
+      });
+
+      // Add glow effect to the clicked tab button
+      this.classList.add('active-glow');
+    });
+  });
+
+  // Add active class to the default active tab button
+  document.querySelector('.tab:first-child').classList.add('active');
+
+  // Add glow effect to default active tab button
+  document.querySelector('.tab.active').classList.add('active-glow');
+});
+
+function showContent(topic) {
+  var contentDivs = document.querySelectorAll('.widget .content > div');
+  var tabButtons = document.querySelectorAll('.widget .tab');
+
+  // Remove active class from all content divs
+  contentDivs.forEach(function(div) {
+    div.classList.remove('active');
+  });
+
+  // Remove glow effect from all tab buttons
+  tabButtons.forEach(function(tab) {
+    tab.classList.remove('active-glow');
+  });
+
+  // Add active class to the clicked content div
+  document.getElementById(topic).classList.add('active');
+
+  // Add glow effect to the clicked tab button
+  var clickedTab = document.querySelector('.tab[data-topic="' + topic + '"]');
+  if (clickedTab) {
+    clickedTab.classList.add('active-glow');
+  }
+}
+</script>
+
+
+<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+
+<style type="text/css">{mso-displayed-decimal-separator:"\."; mso-displayed-thousand-separator:"\,";} 
+
+body {
+cursor: url(https://i.imgur.com/R1LDYnL.png), auto;
+background: url(https://i.imgur.com/T6e3IkL.png);
+background-repeat: no-repeat;
+//background-size: cover, contain;
+background-position: center;
+background-attachment: fixed;
+background-color: #000
+}
+    
+
+
+{}
+a.simplink:link, a.simplink:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a.simplink:hover, a.simplink:active {
+  text-shadow: 0 0 1px orange;
+  transition: all 200ms ease-out;
+  color: orange;
+  text-decoration: none;
+}
+a.boxlink:link, a.boxlink:visited {
+  mso-background-color: rgba(0, 0, 0, 0.5);
+  border:2px groove #442200;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+a.boxlink2:hover, a.boxlink2:active {
+  box-shadow: 0 0 8px rgba(255, 0, 0, 1);
+  transition: all 200ms ease-out;
+  background-color: #000;
+  color: rgba(255, 0, 0, 1);
+}
+a.boxlink2:link, a.boxlink2:visited {
+  mso-background-color: rgba(0, 0, 0, 0.7);
+  border:2px solid rgba(255, 0, 0, 0.4);
+  border-radius:4px;
+  color: rgba(255, 0, 0, 0.8);
+  font-size: 10pt;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.boxlink:hover, a.boxlink:active {
+  box-shadow: 0 0 6px orange;
+  transition: all 200ms ease-out;
+  background-color: #000;
+  color: orange;
+}
+
+a.langlink:link, a.langlink:visited {
+  opacity: 0.5;
+}
+a.langlink:hover {
+opacity: 1;
+}
+a.langlink:hover > img{
+box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+opacity: 1;
+}
+a.langlink:active > img{
+box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+opacity: 1;
+}
+
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+  text-align: center;
+  padding: 1px;
+  color: silver;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 0px;
+  transition: all 0.25s ease-out;
+}
+
+
+.lbl-toggle:hover {
+  color: orange;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .4rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 800px;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height .25s max-width .25s ease-in-out;
+}
+
+.collapsible-content .content-inner {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: .01rem;
+}
+
+ .widget {
+  width: 700px;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex; /* Use flexbox to align sidebar and content */
+}
+
+.widget .sidebar {
+  width: 200px; /* Set a fixed width for the sidebar */
+  padding: 10px;
+  overflow-y: auto; /* Make the sidebar scrollable vertically */
+}
+
+  .widget .tab {
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: transparent; /* Make buttons transparent */
+    border: 1px solid orange; /* Add orange border to buttons */
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    color: orange; /* Change button text color to orange */
+  }
+
+  .widget .tab:hover {
+    background-color: rgba(255, 165, 0, 0.25); /* Add orange glow on hover */
+  }
+  
+  .widget .tab.active-glow {
+    background-color: rgba(255, 165, 0, 0.25); /* Add orange glow on active tabs */
+    color: yellow; /* Change text color to yellow for active tab */
+}
+  
+  .widget .content-wrapper {
+    width: 70%;
+    height: 95%;
+    padding: 10px;
+    background-color: black; /* Change screen color to black */
+    border: 4px solid rgba(255, 165, 0, 0.5); /* Add less bright orange border */
+    border-radius: 5px;
+    overflow: auto; /* Add overflow for scrolling */
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* Add glowy effect */
+  }
+
+  .widget .content {
+    color: white; /* Change text color to white */
+  }
+
+  .widget .content > div {
+    display: none; /* Hide content divs by default */
+  }
+
+  .widget .content > div.active {
+    display: block; /* Display active content div */
+  }
+  .widget h2 {
+  color: yellow;
+}
+
+/* Scrollbar Customizing */
+.widget .sidebar::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+.widget .sidebar::-webkit-scrollbar-track {
+  background: transparent; /* Set the background color of the scrollbar track */
+}
+
+.widget .sidebar::-webkit-scrollbar-thumb {
+background-color: rgba(255, 191, 0, 0.5); /* Set the color of the scrollbar thumb */
+}
+
+.widget .sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scrollbar thumb on hover */
+}
+.widget .content-wrapper::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+.widget .content-wrapper::-webkit-scrollbar-track {
+  background: transparent; /* Set the background color of the scrollbar track */
+}
+
+.widget .content-wrapper::-webkit-scrollbar-thumb {
+background-color: rgba(255, 191, 0, 0.5); /* Set the color of the scrollbar thumb */
+}
+
+.widget .content-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scrollbar thumb on hover */
+}
+
+.social-link {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+
+  width: 70px;
+  height: 70px;
+
+}
+
+.social-link img {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+
+}
+
+.social-link:hover img {
+  opacity: 1;
+}
+
+.bo-tooltip {
+  visibility: hidden;
+  background-color: black;
+  color: orange;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  border: 2px solid orange;
+  box-shadow: 0 0 10px orange;
+}
+
+.bo-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 48%;
+  margin-left: -5px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: orange transparent transparent transparent;
+}
+
+.social-link:hover .bo-tooltip {
+  visibility: visible;
+}
+
+</style>
+</head>
+
+<table cellspacing="2" width="700" style="margin-left:auto;margin-right:auto;">
+
+<tr>
+<tr class="xl151547">
+  <td class="xl261547" style="padding-top:0.01rem;font-size:18pt;text-align:center;" colspan="12">
+    <br><a href="https://store.steampowered.com/app/1025600"><img src="https://i.imgur.com/D2BB1k1.png" style="max-width:90%"></a><br>
+<b>Battle Realms Mini-Guide<br>
+
+Version: 1.58.3 (Zen Edition/Steam)</b><br>
+<img src="https://i.imgur.com/KGBqfCi.jpg" style="margin-top:20px;margin-right:4px" title="Currently selected: English"/></a>
+<!--
+<a href="https://battlerealms.github.io/miniguide_de/" class="langlink">
+<img src="https://i.imgur.com/ax34OxC.png" style="width:32px;height:22px" title="Switch to German"/>
+</a>
+-->
+   <div class="wrap-collabsible" style="margin-bottom:0.1rem;padding-top:0.6rem;padding-bottom:1.5rem;font-size:14pt;colspan=12">
+  <input id="collapsible777" class="toggle" type="checkbox">
+  <label for="collapsible777" class="lbl-toggle" tabindex="0"><strong>
+<font color="yellow">Want to see this in your language?</font>
+</strong>
+</label>
+    <div class="collapsible-content">
+    <div class="content-inner" style="padding-right:4rem; padding-left:4rem;font-size:12pt"><p>
+It's pretty easy! Help us help you - you can translate the entries and send it over to us at <b>support@battlerealms.com</b> with the name "Online Guide Localization". We can then integrate the translations into this site. :)</p>
+    </div>
+  </div>
+</div>
+   <div class="wrap-collabsible" style="margin-bottom:0.1rem;padding-bottom:1.5rem;font-size:12pt;colspan=12">
+  <input id="collapsible00" class="toggle" type="checkbox">
+  <label for="collapsible00" class="lbl-toggle" tabindex="0"><strong>
+Last edit: February 29, 2024
+</strong>
+</label>
+    <div class="collapsible-content">
+    <div class="content-inner" style="padding-right:4rem; padding-left:4rem;font-size:12pt"><p>
+<b>Credits to alecThunder and <a href="https://web.archive.org/web/20030909221652/http://www.the-barracks.com/battlerealms/chart.php" class="simplink">the-barracks.com</a> for creating the original. Maintained by <b><a href="https://www.youtube.com/komikozabr" class="simplink">KoMiKoZa</a> from The Battle Realms Team for the Battle Realms Community worldwide.</b><br><br>
+Country flag icons by <a href="https://www.iconfinder.com/yummygum" class="simplink">Vincent Schwidder </a>.</b><br><br>
+<b>All the information on this page reflects the latest BR version (Zen Edition) based on the in-game data. If you find any mistakes/oversights or want to suggest something, do so in the <a href="https://discord.gg/battlerealms" class="simplink">BR Discord Server</a>. Thank you!</b></p>
+    </div>
+  </div>
+</div>
+
+
+<a href="https://battlerealms.github.io/miniguide" class="boxlink2" style="margin-bottom:0.8rem;margin-top:0.5rem"><b>Full Version Unavailable</b></a><br><br>
+</tr>
+<tr>
+<td class="xl261547" style="font-size:16pt;text-shadow: 0 0 12px rgba(35, 173, 278, 1);text-align:center;box-shadow: 0 0 12px rgba(35, 173, 278, 1);background-color: rgba(8, 14, 44, 0.55)" colspan="12" ><br>
+Steam Early Access version of Battle Realms: Zen Edition<br>[Released: December 3,2019]<br>[Major Overhaul Update 1.58 Available since December 15, 2022]<br><br>
+<iframe src="https://store.steampowered.com/widget/1025600/" frameborder="0" width="646" height="190"></iframe><br><br>
+</tr>
+<tr>
+<tr>
+   <tr class="xl151547">
+   <td class="xl261547" style="font-size:12pt;text-align:center;" colspan="12"><br>
+  <a href="https://discord.gg/battlerealms" class="social-link">
+    <img src="https://i.imgur.com/jmOzks5.png" alt="Social Link">
+    <span class="bo-tooltip">Official BR Discord</span>
+  </a>
+  <a href="https://www.youtube.com/battlerealmsofficial" class="social-link">
+    <img src="https://i.imgur.com/L0IRGWw.png" alt="Social Link">
+    <span class="bo-tooltip">Official BR YouTube</span>
+  </a>
+  <a href="https://facebook.com/BattleRealmsOfficial" class="social-link">
+    <img src="https://i.imgur.com/J1Szk9y.png" alt="Social Link">
+    <span class="bo-tooltip">Official BR Facebook</span>
+  </a>
+  <a href="https://twitter.com/BattleRealmsOff" class="social-link">
+    <img src="https://i.imgur.com/qbw1oLG.png" alt="Social Link">
+    <span class="bo-tooltip">Official BR X (Twitter)</span>
+  </a>
+  <a href="https://twitch.tv/directory/game/Battle%20Realms:%20Zen%20Edition" class="social-link">
+    <img src="https://i.imgur.com/pfcgDsH.png" alt="Social Link">
+    <span class="bo-tooltip">BR:ZE on Twitch</span>
+  </a>
+  <a href="https://www.reddit.com/r/BattleRealms" class="social-link">
+    <img src="https://i.imgur.com/1qjL14D.png" alt="Social Link">
+    <span class="bo-tooltip">BR Reddit</span>
+  </a>
+  <a href="https://battlerealms.fandom.com" class="social-link">
+    <img src="https://i.imgur.com/gR0vc3F.png" alt="Social Link">
+    <span class="bo-tooltip">BR Wiki</span>
+  </a>
+  <a href="https://www.gog.com/game/battle_realms_winter_of_the_wolf" class="social-link">
+    <img src="https://i.imgur.com/9a4fVpc.png" alt="Social Link">
+    <span class="bo-tooltip">Buy the Original/Legacy game on GOG (1.50q/DRM-free)</span>
+  </a>
+<br><br>
+</td>
+</tr>
+<tr>
+   <tr class="xl151547">
+   <td class="xl261547" colspan="12" style="font-size:14pt;text-align:center;">
+     <div class="widget">
+    <div class="sidebar">
+      <div class="tab" onclick="showContent('topic1')"><b>Understanding the Table</b></div>
+      <div class="tab" onclick="showContent('topic2')">Piercing Damage Redesign (1.58.3)</div>
+      <div class="tab" onclick="showContent('topic3')">Poison</div>
+      <div class="tab" onclick="showContent('topic4')">Siege vs Non Siege</div>
+      <div class="tab" onclick="showContent('topic5')">Flammabity</div>
+      <div class="tab" onclick="showContent('topic6')">Terrain & Environment</div>
+      <div class="tab" onclick="showContent('topic7')">Yin & Yang</div>
+      <div class="tab" onclick="showContent('topic8')">Peasant Generation</div>
+      <div class="tab" onclick="showContent('topic9')">Horses</div>
+    </div>
+    <div class="content-wrapper">
+      <div class="content">
+        <div id="topic1" class="active">
+          <h2>Understanding the Table</h2>
+          <p><b>Damage values</b><br><br>5 types of damage and 5 types of armor respectively.<br><br>Every unit in the game has their own Armor Multipliers (AM) for all 5 damage types. Think of every unit taking <b>standard</b> full damage (100% / 1 AM) from every attack type. Higher values mean <b>weaknesses</b> where as lower values mean <b>resistances</b>.<br><br>
+
+Armor Multiplier value of <b>50%</b> means the unit will take <b>half</b> incoming damage from an attack because it lowers the <b>default</b> armor multiplier from 1 (100%) to 0,5 (50%).<br><br>
+
+A value of <b>200%</b> means the unit will take <b>double</b> damage because it increases the <b>default</b> armor multiplier from 1 (100%) to 2 (200%).<br>
+<u>Weaknesses</u> are marked with <font style="color:yellow">yellow</font> color where as <u>Resistances</u>  are <font style="color:red">red</font>. <u>Neutral</u> values are grey.<br><br>
+This system is based around <font style="color:orange"><strong>multipliers</strong></font>. <br><br>For example, a unit that has cutting damage value at <font style="color:red">25%</font> (strong resistance) is also hit by a <u>negative</u> effect - "<font style="color:white">takes 50% more damage from all attack types</font>", this means the unit will take <font style="color:red">37,5%</font> damage from cutting attacks (moderate (weaker) resistance) <i>[0,25 * 1,5 = 0,375 / rounded to 0,38 by the game]</i>.<br><br> And if the same unit is hit by a positive effect- "<font style="color:white">takes 50% less damage from all attack types</font>", this means the unit will take <font style="color:red">13%</font> damage from cutting attacks (strong resistance) <i>[0,25 * 0,5 = 0,125 / rounded to 0,13 by the game]</i>.<br><br>
+<u><b>SP = Unit is available only in the Single Player campaign.</b></u></p>
+        </div>
+        <div id="topic2">
+          <h2>Piercing Damage Redesign (1.58.3)</h2>
+          <p>Piercing armor is now always exactly in the middle between the worst and best possible counters (weakest and strongest armor).<br><br>
+If a unit's highest armor is <b>25%</b> <i>(takes 25% damage)</i> and lowest armor is <b>150%</b> <i>(takes 150% damage)</i>, then they will take <font color="yellow">(25 + 150)/2= <b><i>88%</i></b></font>  damage from <b>Piercing</b> based attacks.<br><br>
+This is the supposed "lazy" damage type that will always be better than a resistance, but worse than a weakness.</p>
+        </div>
+        <div id="topic3">
+          <h2>Poison</h2>
+          <p><font style="color:green">Poison</font> is a unique damage trait that bypasses all weaknesses and resistances.<br><br>
+In the legacy version of the game (2001-2002), Poison is interconnected with base damage of units. It takes 50% of units' base damage and distributes it overtime.<br><br>
+Zen Edition has Poison untied from units' base damage. Instead it's applied as additional "pure" damage that is distributed overtime. On top of that, it slows units down by 40% and prevents them from being healed.<br><br>Poisoned units that get healed will have poison removed first, only after that they can be healed normally. If a unit in the process of healing gets hit by poison, the healing effect stops.<br></p>
+        </div>
+        <div id="topic4">
+          <h2>Siege vs Non Siege</h2>
+          <p>TL;DR: If you don't train Siege units, you won't be able to effectively destroy buildings.<br><br>
+• Buildings take 100% damage from any damage type.<br><br>
+• Siege units deal great damage to buildings; Non- Siege units are much less efficient.<br><br>
+• Unit Class will show as Siege in “Smart Tooltips” when selecting units.</p>
+        </div>
+        <div id="topic5">
+          <h2>Flammability</h2>
+          <p>There are 3 types of flammability that define how easy it is to set a building on fire: <b>simple</b> (only watchtowers), <b>medium</b> (all combat/special buildings) and <b>hard</b> (only keeps).<br><br>
+
+Burning buildings launch <b>embers</b>, they slightly damage units and are able to set other buildings on fire. If the fire remains unattended for long it can quickly cause a chain reaction setting your buildings ablaze.<br><br>
+
+Attacking buildings with fire when it's raining will be much less effective, rain will also extinguish any already burning building (and water ricefields).</p>
+        </div>
+        <div id="topic6">
+          <h2>Terrain & Environment</h2>
+          <p>☯ <b>Height (dis)Advantage</b>: TL;DR: The taller unit gains an advantage.<br><br>Height advantage is a damage bonus (or penalty) obtained by units relative to the target they are attacking. This is related to unit heights (base models and their positioning).<br><br>The maximum height damage bonus that can be obtained by units is <b>+25%</b> and the maximum penalty is <b>-25%</b>.<br><br>For example:</br> Warlock vs Archer duking it out on flat terrain will result in Warlock gaining <b>~12% bonus damage</b> against archer because of the height advantage.<br>Archer will be able to neglect that and even come on top (by a tiny bit) if he gets on top of a horse since his height is now above Warlock's.<br>Warlock will be at a big disadvantage fighting <b>the Shale Lord</b> in melee on even ground - the tallest unit in the game. That goes for pretty much any unit. <br><br>Horses, Towers and terrain (cliffs, hills etc.) provide a way to get "above" your enemy and neglect that, and even get bonus damage as a result. Death from above!
+
+<br><br>
+☯ <b>Environment</b>: Units will have decreased speed when climbing hills (increased speed when going down), going through water or forest areas. Trees also obscure units' LOS. There are exceptions for certain unique units. All units will alert birds in the trees when running, essentially giving their position away to the enemy.<br><br>
+
+When it's raining, all buildings will be extinguished and all rice crops will be watered (thus growing back faster). When it's showing, rice crops will be growing back at a decreased rate.</p>
+        </div>
+        <div id="topic7">
+          <h2>Yin & Yang</h2>
+          <p>All <b>Zen-Masters</b> (heroes) and Spirit Wolves have their damage increased by <b>10% per each Yin/Yang</b> the Clan has (<u>not with every Yin/Yang gained in total</u>). Ninja and Monks get a 5% damage increase. <b>Serpent</b> and <b>Lotus</b> follow the <b>Yin</b> where as <b>Dragon</b> and <b>Wolf</b> follow the <b>Yang</b>.<br><br>
+
+The rule for acquiring Yin/Yang is pretty simple: the more effectively you fight, the more Yin/Yang you get. However, the mechanic is deeper than that and depends on many conditions: <b>inflicted/received damag</b>e, <b>how far you fight from your peasant huts</b>, and <b>the amount of points you already have</b>.<br><br>
+
+Building a Town Square will also increase the Yin/Yang generation by <b>25%</b> for all clans.</p>
+        </div>
+       <div id="topic8">
+       <h2>Peasant Generation</h2>
+<p>All peasant huts add +100 rice and +50 water bonus to the maximum resource cap, as well as a <a href="https://youtu.be/Z_ehDsCNrbk" class="simplink">small boost</a> to the peasant generation rate. In the original/legacy game (2001-2002) and in Zen Edition (as of 1.58.2), the boost effect is <b>uncapped</b> and is limited only to the maximum building cap (50 buildings).</p>
+        </div>
+       <div id="topic9">
+       <h2>Horses</h2>
+       <p>
+<b>Horses</b> can be used either as a combat unit, or as an addition to peasants. In both cases, combat or economic power gets increased. Wild horses can be seen on the minimap as brown dots.<br><br>
+
+☯ <b>Combat</b>: Horses give their riders a <b>height bonus</b> and, in some cases, <b>faster attack speed</b>, as well as <b>more survavibility</b> in combat. They are also able to <b>trample</b> (BG, Lotus' steeds burn enemies and buildings) which can be deadly for certain enemy units, however, mounted units will be unable to use their BGs. All clans (except Wolf) have various upgrades to improve their horses.<br><br>
+
+Melee units deal 100% of their damage to <b>horses</b>, missile units deal 100% of their damage to <b>riders</b>. Area Of Effect attacks will deal <b>100% damage to riders and 100% to horses</b>.<br><br>
+
+☯ <b>Economy</b>: Dragon, Serpent and Lotus Peasants can take horses in order to gather more resources. Each horse can carry 45 units of rice or water, any peasant can carry 15 units.
+
+Tamed horses without a host can be taken by anyone. Steal enemy horses and look after yours!
+
+Wolf peasants will always feed horses to their wolves. Wolf units can attack other enemy clans' horses that have no rider.
+      </p>
+        </div>
+      </div>
+      
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl281547" style="background:#994C00"><b>Dragon Clan</b></td>
+    <td class="xl281547" style="background:#994C00"><b>Melee</b></td>
+    <td class="xl281547" style="background:#994C00"><b>Missile</b></td>
+    <td class="xl281547" style="background:#994C00"><b>Cutting</b></td>
+    <td class="xl281547" style="background:#994C00"><b>Blunt</b></td>
+    <td class="xl281547" style="background:#994C00"><b>Piercing</b></td>
+    <td class="xl281547" style="background:#994C00"><b>Explosive</b></td>
+    <td class="xl281547" style="background:#994C00"><b>Magical</b></td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_D"><b>Spearman</b></td>
+        <td class="xl271547_D"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_D">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>88%</i></td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_D"><b>Archer</b></td>
+    <td class="xl271547_D">Blunt</td>
+        <td class="xl271547_D"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>75%</i></td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_D"><b>Chemist</b></td>
+    <td class="xl271547_D">Blunt</td>
+    <td class="xl271547_D">Explosive</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>88%</i></td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_D"><b>Geisha</b></td>
+    <td class="xl271547_D">Blunt</td>
+    <td class="xl271547_D">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>100%</i></td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_D"><b>PK Cannoneer</b></td>
+    <td class="xl271547_D">Blunt</td>
+    <td class="xl271547_D">Explosive</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>88%</i></td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr> 
+   <tr class="xl161547"> 
+    <td class="xl271547_D"><b>Dragon Warrior</b></td>
+    <td class="xl271547_D">Cutting</td>
+    <td class="xl271547_D">Magic</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>88%</i></td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_D"><b>Kabuki Warrior</b></td>
+    <td class="xl271547_D">Magic</td>
+    <td class="xl271547_D">Magic</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>100%</i></td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_D"><b>Samurai</b></td>
+    <td class="xl271547_D">Cutting</td>
+        <td class="xl271547_D"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>100%</i></td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">175%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_D"><b>Battle Maiden</b></td>
+    <td class="xl271547_D">Cutting</td>
+    <td class="xl271547_D">Cutting</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>100%</i></td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_D"><b>Guardian</b></td>
+    <td class="xl271547_D">Blunt</td>
+    <td class="xl271547_D">-</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>88%</i></td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+</tr>
+<tr>
+   <tr class="xl161547">
+    <td class="xl271547_D"style="font-size:12pt;text-shadow: 0px 0px 1px black, 0px 0px 15px #cc8400, 0px 0px 20px #cc8400;box-shadow: 0 0 4px #4c3100, 0 0 2px #cc8400;"><b>Otomo</b></td>
+    <td class="xl271547_D">Cutting</td>
+    <td class="xl271547_D">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>88%</i></td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+</tr>
+<tr class="xl151547"> 
+    <td class="xl271547_D"style="font-size:12pt;text-shadow: 0px 0px 1px black, 0px 0px 15px #cc8400, 0px 0px 20px #cc8400;box-shadow: 0 0 4px #4c3100, 0 0 2px #cc8400;"><b>Tao</b></td>
+    <td class="xl271547_D">Blunt</td>
+    <td class="xl271547_D">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>100%</i></td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+</tr>
+<tr class="xl161547"> 
+    <td class="xl271547_D"style="font-size:12pt;text-shadow: 0px 0px 1px black, 0px 0px 15px #cc8400, 0px 0px 20px #cc8400;box-shadow: 0 0 4px #4c3100, 0 0 2px #cc8400;"><b>Arah</b></td>
+    <td class="xl271547_D">Cutting</td>
+        <td class="xl271547_D"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>88%</i></td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr class="xl151547"> 
+    <td class="xl271547_D"style="font-size:12pt;text-shadow: 0px 0px 1px black, 0px 0px 15px #cc8400, 0px 0px 20px #cc8400;box-shadow: 0 0 4px #4c3100, 0 0 2px #cc8400;"><b>Teppo</b></td>
+    <td class="xl271547_D">Blunt</td>
+    <td class="xl271547_D">Explosive</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>88%</i></td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+</tr>
+<tr class="xl161547"> 
+    <td class="xl271547_D"style="font-size:12pt;text-shadow: 0px 0px 1px black, 0px 0px 15px #cc8400, 0px 0px 20px #cc8400;box-shadow: 0 0 4px #4c3100, 0 0 2px #cc8400;"><b>Kazan</b></td>
+    <td class="xl271547_D">Blunt</td>
+    <td class="xl271547_D">Explosive</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>88%</i></td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+</tr>
+<tr class="xl151547"> 
+    <td class="xl271547_D"style="font-size:12pt;text-shadow: 0px 0px 1px black, 0px 0px 15px #cc8400, 0px 0px 20px #cc8400;box-shadow: 0 0 4px #4c3100, 0 0 2px #cc8400;"><b>Garrin</b></td>
+        <td class="xl271547_D"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_D">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4"><i>88%</i></td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+</tr>
+
+<tr>
+<td>
+   <tr class="xl151547"> 
+    <td class="xl281547"><b>Serpent Clan</b></td>
+    <td class="xl281547"><b>Melee</b></td>
+    <td class="xl281547"><b>Missile</b></td>
+    <td class="xl281547"><b>Cutting</b></td>
+    <td class="xl281547"><b>Blunt</b></td>
+    <td class="xl281547"><b>Piercing</b></td>
+    <td class="xl281547"><b>Explosive</b></td>
+    <td class="xl281547"><b>Magical</b></td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_S"><b>Swordsman</td>
+    <td class="xl271547_S">Cutting</td>
+    <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+</tr>
+<tr>
+  <tr class="xl151547"> 
+    <td class="xl271547_S"><b>Musketeer</td>
+    <td class="xl271547_S">Blunt</td>
+    <td class="xl271547_S">Explosive</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_S"><b>Crossbowman</td>
+        <td class="xl271547_S"><font color="FFD580">Piercing</font></td>
+        <td class="xl271547_S"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_S"><b>Fan Geisha</td>
+    <td class="xl271547_S">Cutting</td>
+    <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_S"><b>Cannoneer</td>
+    <td class="xl271547_S">Blunt</td>
+    <td class="xl271547_S">Blunt</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_S"><b>Raider</td>
+    <td class="xl271547_S">Blunt</td>
+    <td class="xl271547_S">Explosive</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_S"><b>Bandit</td>
+        <td class="xl271547_S"><font color="FFD580">Piercing</font></td>
+        <td class="xl271547_S"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_S"><b>Ronin</td>
+    <td class="xl271547_S">Cutting</td>
+    <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">113%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">175%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_S"style="font-size:12pt;text-shadow: 0px 0px 1px black, 0px 0px 15px #ff1919, 0px 0px 25px #ff1919;box-shadow: 0 0 4px #990000, 0 0 2px #4c0000;"><b>Necromancer</b></td>
+    <td class="xl271547_S">Magic</td>
+    <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+   <tr class="xl151547"> 
+    <td class="xl271547_S"><b>Spirit Warrior</td>
+    <td class="xl271547_S">Magic</td>
+    <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+   <tr class="xl161547"> 
+    <td class="xl271547_S"><b>Zombie</td>
+    <td class="xl271547_S">Cutting</td>
+    <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_S"><b>Enforcer</td>
+    <td class="xl271547_S">Blunt</td>
+    <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+   <tr class="xl161547"> 
+    <td class="xl271547_S"><b>Witch</td>
+    <td class="xl271547_S">Magic</td>
+    <td class="xl271547_S">Magic</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+   <tr class="xl151547"> 
+    <td class="xl271547_S"><b>Demoness</td>
+    <td class="xl271547_S">Magic</td>
+    <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+   <tr class="xl161547" > 
+    <td class="xl271547_S"style="font-size:12pt;text-shadow: 0px 0px 1px black, 0px 0px 15px #ff1919, 0px 0px 25px #ff1919;box-shadow: 0 0 4px #990000, 0 0 2px #4c0000;"><b>Shinja</b></td>
+    <td class="xl271547_S">Cutting</td>
+    <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+   <tr class="xl151547"> 
+    <td class="xl271547_S"style="font-size:12pt;text-shadow: 0px 0px 1px black, 0px 0px 15px #ff1919, 0px 0px 25px #ff1919;box-shadow: 0 0 4px #990000, 0 0 2px #4c0000;"><b>Utara</b></td>
+        <td class="xl271547_S"><font color="FFD580">Piercing</font></td>
+        <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">63%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+   <tr class="xl161547"> 
+    <td class="xl271547_S"style="font-size:12pt;text-shadow: 0px 0px 1px black, 0px 0px 15px #ff1919, 0px 0px 20px #ff1919, 0px 0px 30px #ff1919;box-shadow: 0 0 4px #990000, 0 0 2px #4c0000;"><b>Taro</b></td>
+    <td class="xl271547_S">Magic</td>
+        <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+   <tr class="xl151547"> 
+    <td class="xl271547_S"style="font-size:12pt;text-shadow: 0px 0px 1px black, 0px 0px 15px #ff1919, 0px 0px 25px #ff1919;box-shadow: 0 0 4px #990000, 0 0 2px #4c0000;"><b>Vetkin</b></td>
+        <td class="xl271547_S"><font color="FFD580">Piercing</font></td>
+        <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_S"style="font-size:12pt;text-shadow: 0px 0px 1px black, 0px 0px 15px #ff1919, 0px 0px 25px #ff1919;box-shadow: 0 0 4px #990000, 0 0 2px #4c0000;"><b>Budo</b></td>
+    <td class="xl271547_S">Blunt</td>
+        <td class="xl271547_S">-</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+
+<tr>
+<td>
+   <tr class="xl151547"> 
+    <td class="xl281547" style="background:#004c00;border:.5pt solid #000"><b>Wolf Clan</b></td>
+    <td class="xl281547" style="background:#004c00;border:.5pt solid #000"><b>Melee</b></td>
+    <td class="xl281547" style="background:#004c00;border:.5pt solid #000"><b>Missile</b></td>
+    <td class="xl281547" style="background:#004c00;border:.5pt solid #000"><b>Cutting</b></td>
+    <td class="xl281547" style="background:#004c00;border:.5pt solid #000"><b>Blunt</b></td>
+    <td class="xl281547" style="background:#004c00;border:.5pt solid #000"><b>Piercing</b></td>
+    <td class="xl281547" style="background:#004c00;border:.5pt solid #000"><b>Explosive</b></td>
+    <td class="xl281547" style="background:#004c00;border:.5pt solid #000"><b>Magical</b></td>
+</tr>
+
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_W"><b>Hurler</td>
+    <td class="xl271547_W">Blunt</td>
+    <td class="xl271547_W">Blunt</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    </tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_W"><b>Brawler</td>
+    <td class="xl271547_W">Cutting</td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_W"><b>Mauler</td>
+    <td class="xl271547_W">Blunt</td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_W"><b>Pack Master</td>
+    <td class="xl271547_W">Blunt</td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_W"><b>Druidess</td>
+    <td class="xl271547_W">Magic</td>
+    <td class="xl271547_W">Magic</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_W"><b>Ballistaman</td>
+        <td class="xl271547_W"><font color="FFD580">Piercing</font></td>
+        <td class="xl271547_W"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_W"><b>Pitch Slinger</td>
+    <td class="xl271547_W">Explosive</td>
+    <td class="xl271547_W">Explosive</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+</tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_W"><b>Sledger</td>
+    <td class="xl271547_W">Blunt</td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_W"><b>Berserker</td>
+    <td class="xl271547_W">Cutting</td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+     <tr class="xl161547"> 
+    <td class="xl271547_W"><b>Werewolf</td>
+        <td class="xl271547_W"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_W"><b>Digger</td>
+    <td class="xl271547_W">Cutting</td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+   <tr class="xl161547"> 
+    <td class="xl271547_W"><b>Dryad</td>
+    <td class="xl271547_W">Magic</td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_W" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #49ff18;box-shadow: 0 0 4px #006600, 0 0 2px #002600;"><b>Grayback</b></td>
+        <td class="xl271547_W"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+
+   <tr class="xl161547"> 
+    <td class="xl271547_W" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #49ff18;box-shadow: 0 0 4px #006600, 0 0 2px #002600;"><b>Longtooth</b></td>
+    <td class="xl271547_W">Magic</td>
+    <td class="xl271547_W">Magic</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    
+   <tr class="xl151547"> 
+    <td class="xl271547_W" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #49ff18;box-shadow: 0 0 4px #006600, 0 0 2px #002600;"><b>Gaihla</b></td>
+    <td class="xl271547_W">Cutting</td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+   <tr class="xl151547"> 
+    <td class="xl271547_W" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #49ff18;box-shadow: 0 0 4px #006600, 0 0 2px #002600;"><b>The Shale Lord</td>
+    <td class="xl271547_W">Blunt</td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">175%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_W" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #49ff18;box-shadow: 0 0 4px #006600, 0 0 2px #002600;"><b>Wildeye</b></td>
+    <td class="xl271547_W">Blunt</td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    
+  <tr class="xl151547"> 
+    <td class="xl271547_W"><b>Spirit Wolf</b></td>
+        <td class="xl271547_W"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_W">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+  </tr>
+
+<tr>
+<td>
+   <tr class="xl161547" style="background:#260026"> 
+    <td class="xl281547" style="background:#4c004c"><b>Lotus Clan</b></td>
+    <td class="xl281547" style="background:#4c004c"><b>Melee</b></td>
+    <td class="xl281547" style="background:#4c004c"><b>Missile</b></td>
+    <td class="xl281547" style="background:#4c004c"><b>Cutting</b></td>
+    <td class="xl281547" style="background:#4c004c"><b>Blunt</b></td>
+    <td class="xl281547" style="background:#4c004c"><b>Piercing</b></td>
+    <td class="xl281547" style="background:#4c004c"><b>Explosive</b></td>
+    <td class="xl281547" style="background:#4c004c"><b>Magical</b></td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_L"><b>Staff Adept</td>
+    <td class="xl271547_L">Blunt</td>
+    <td class="xl271547_L">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_L"><b>Blade Acolyte</td>
+    <td class="xl271547_L">Cutting</td>
+    <td class="xl271547_L">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_L"><b>Leaf Disciple</td>
+        <td class="xl271547_L"><font color="FFD580">Piercing</font></td>
+        <td class="xl271547_L"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_L"><b>Channeler</td>
+        <td class="xl271547_L"><font color="FFD580">Piercing</font></td>
+        <td class="xl271547_L"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+</tr>
+
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_L" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #993299, 1px 1px 20px #993299;box-shadow: 0 0 4px #730073, 0 0 2px #002600;"><b>Brother Sehk</td>
+        <td class="xl271547_L"><font color="FFD580">Piercing</font></td>
+        <td class="xl271547_L"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+        <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+                <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+                    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+   <tr class="xl151547"> 
+    <td class="xl271547_L" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #993299, 1px 1px 20px #993299;box-shadow: 0 0 4px #730073, 0 0 2px #002600;"><b>Brother Lythis</td>
+    <td class="xl271547_L">Cutting</td>
+    <td class="xl271547_L">-</td>
+        <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+        <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+                <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+                    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+   <tr class="xl151547"> 
+    <td class="xl271547_L" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #993299, 1px 1px 20px #993299;box-shadow: 0 0 4px #730073, 0 0 2px #002600;"><b>Brother Tausil</td>
+    <td class="xl271547_L">Blunt</td>
+    <td class="xl271547_L">-</td>
+        <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+        <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+                <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+                    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+</tr>
+
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_L"><b>Unclean One</td>
+    <td class="xl271547_L">Blunt</td>
+    <td class="xl271547_L">Magic</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_L"><b>Diseased One</td>
+    <td class="xl271547_L">Magic</td>
+    <td class="xl271547_L">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_L"><b>Infested One</td>
+        <td class="xl271547_L"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_L">-</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr>
+  <tr class="xl151547"> 
+    <td class="xl271547_L"><b>Warlock</td>
+    <td class="xl271547_L">Magic</td>
+    <td class="xl271547_L">Explosive</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+   <tr class="xl161547"> 
+    <td class="xl271547_L"><b>Master Warlock</td>
+    <td class="xl271547_L">Cutting</td>
+    <td class="xl271547_L">Explosive</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_L"><b>Overseer</td>
+    <td class="xl271547_L">Blunt</td>
+    <td class="xl271547_L">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+
+   <tr class="xl161547"> 
+    <td class="xl271547_L"><b>Reaper</td>
+    <td class="xl271547_L">Cutting</td>
+    <td class="xl271547_L">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_L"><b>Shambler</td>
+    <td class="xl271547_L">Magic</td>
+    <td class="xl271547_L">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+</tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_L" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #993299, 1px 1px 20px #993299, 1px 1px 25px #993299, 1px 1px 30px #993299;box-shadow: 0 0 4px #730073, 0 0 2px #002600;"><b>Zymeth<b></td>
+    <td class="xl271547_L">Magic</td>
+    <td class="xl271547_L">Explosive</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+   <tr class="xl161547">
+    <td class="xl271547_L" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #993299, 1px 1px 20px #993299, 1px 1px 25px #993299;box-shadow: 0 0 4px #730073, 0 0 2px #002600;"><b>Yvaine</b></td>
+    <td class="xl271547_L">Magic</td>
+        <td class="xl271547_L"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">88%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+   <tr class="xl151547"> 
+    <td class="xl271547_L" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #993299, 1px 1px 20px #993299, 1px 1px 25px #8c198c;box-shadow: 0 0 4px #730073, 0 0 2px #002600;"><b>Koril</b></td>
+    <td class="xl271547_L">Cutting</td>
+    <td class="xl271547_L">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">63%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+   <tr class="xl161547">
+    <td class="xl271547_L" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #8c198c, 1px 1px 20px #993299, 1px 1px 25px #993299, 1px 1px 30px #993299;box-shadow: 0 0 4px #730073, 0 0 2px #002600;"><b>Issyl</b></td>
+    <td class="xl271547_L">Magic</td>
+    <td class="xl271547_L">-</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">200%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">113%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+   <tr class="xl151547"> 
+    <td class="xl271547_L" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 15px #993299, 1px 1px 20px #993299;box-shadow: 0 0 4px #730073, 0 0 2px #002600;"><b>Soban</b></td>
+    <td class="xl271547_L">Blunt</td>
+    <td class="xl271547_L">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+</tr>
+  
+<tr>
+<td>
+   <tr class="xl151547"> 
+    <td class="xl281547" style="background:#595959"><b>Miscellaneous</b></td>
+    <td class="xl281547" style="background:#595959"><b>Melee</b></td>
+    <td class="xl281547" style="background:#595959"><b>Missile</b></td>
+    <td class="xl281547" style="background:#595959"><b>Cutting</b></td>
+    <td class="xl281547" style="background:#595959"><b>Blunt</b></td>
+    <td class="xl281547" style="background:#595959"><b>Piercing</b></td>
+    <td class="xl281547" style="background:#595959"><b>Explosive</b></td>
+    <td class="xl281547" style="background:#595959"><b>Magical</b></td>
+</tr>
+ <tr>
+  <tr class="xl151547"> 
+    <td class="xl271547_N"><b>Peasant (any)</td>
+        <td class="xl271547_N"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_N">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+  </tr>
+  <tr>
+<tr>
+  <tr class="xl151547"> 
+    <td class="xl271547_N"><b>Wild/Tamed Wolf</td>
+        <td class="xl271547_N"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_N">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+  </tr>
+  <tr>
+  <tr class="xl151547"> 
+    <td class="xl271547_N"><b>Wild/Tamed Horse</td>
+    <td class="xl271547_N">-</td>
+    <td class="xl271547_N">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+  </tr>
+ <tr>
+  <tr class="xl161547"> 
+    <td class="xl271547_N"><b>Monk</td>
+    <td class="xl271547_N">Blunt</td>
+    <td class="xl271547_N">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+  </tr>
+  <tr>
+  <tr class="xl161547"> 
+    <td class="xl271547_N"><b>Ninja</td>
+        <td class="xl271547_N"><font color="FFD580">Piercing</font></td>
+        <td class="xl271547_N"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+  </tr>
+<tr>
+  <tr class="xl161547"> 
+    <td class="xl271547_N"><b>Hordeling(SP)</td>
+        <td class="xl271547_N"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_N">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">10%</td>
+  </tr>
+<tr>
+  <tr class="xl161547"> 
+    <td class="xl271547_N"><b>Shale Spider(SP)</td>
+        <td class="xl271547_N"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_N">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+  </tr>
+<tr>
+   <tr class="xl151547"> 
+    <td class="xl271547_N" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 20px white;box-shadow: 0 0 4px white, 0 0 2px white;"><b>Kenji (Neutral-SP)</td>
+    <td class="xl271547_N">Cutting</td>
+    <td class="xl271547_N">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+   <tr class="xl161547"> 
+    <td class="xl271547_N" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 20px white;box-shadow: 0 0 4px white, 0 0 2px white;"><b>Kenji (Dragon-SP)</td>
+    <td class="xl271547_N">Cutting</td>
+    <td class="xl271547_N">Explosive</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+
+   <tr class="xl161547"> 
+    <td class="xl271547_N" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 20px white;box-shadow: 0 0 4px white, 0 0 2px white;"><b>Kenji (Serpent-SP)</td>
+        <td class="xl271547_N">Cutting</td>
+    <td class="xl271547_N">Explosive</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">75%</td>
+
+   <tr class="xl161547"> 
+    <td class="xl271547_N" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 20px orange;box-shadow: 0 0 4px white, 0 0 2px orange;"><b>Kenji (One With The Dragon-SP)</td>
+        <td class="xl271547_N">Cutting</td>
+    <td class="xl271547_N">Explosive</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+<tr>
+   <tr class="xl161547"> 
+    <td class="xl271547_N" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 20px purple;box-shadow: 0 0 4px white, 0 0 2px purple;"><b>Zymeth (No Corruption-SP)</td>
+    <td class="xl271547_N">Magic</td>
+    <td class="xl271547_N">Explosive</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+</tr>
+  <tr>
+  <tr class="xl151547"> 
+    <td class="xl271547_N" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 20px white;box-shadow: 0 0 4px white, 0 0 2px white;"><b>Nightvol(SP)</td>
+        <td class="xl271547_N"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_N">-</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#C0C0C0"><font size="3">100%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+  </tr>
+<tr>
+    <tr class="xl161547"> 
+    <td class="xl271547_N" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 20px green;box-shadow: 0 0 4px white, 0 0 2px green;"><b>Grayback (Slave-SP)</td>
+        <td class="xl271547_N"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_N">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    
+    <tr class="xl161547"> 
+    <td class="xl271547_N" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 20px green;box-shadow: 0 0 4px white, 0 0 2px green;">
+    <b>Grayback (End Game-SP)</td>
+        <td class="xl271547_N"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547_N">-</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">25%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+  </tr>
+  <tr>
+    <tr class="xl161547"> 
+    <td class="xl271547_N" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 20px green;box-shadow: 0 0 4px white, 0 0 2px green;"><b>Longtooth (Slave-SP)</td>
+    <td class="xl271547_N">Magic</td>
+    <td class="xl271547_N">Magic</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD580"><font size="4">100%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
+    <tr>
+    <tr class="xl161547"> 
+    <td class="xl271547_N" style="font-size:12pt;text-shadow: 0px 0px 1px black, 1px 1px 20px purple;box-shadow: 0 0 4px white, 0 0 2px purple;"><b>Yvaine (Ungodly Power-SP)</td>
+    <td class="xl271547_N">Magic</td>
+        <td class="xl271547_N"><font color="FFD580">Piercing</font></td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">0%</td>>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">0%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">0%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">0%</td>
+    <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">0%</td>
+  </tr>
+
+</table>
+</body>
+</html>
