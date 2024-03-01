@@ -1,5 +1,3 @@
-<!-- CSS for Test Env -->
-
 .xl151547 {
     padding: 2px;
     color: orange;
@@ -64,7 +62,7 @@
     text-align: center;
     vertical-align: center;
     border: 2px groove #442200;
-    mso-background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     background-source: auto;
     mso-pattern: auto;
     white-space: normal;
