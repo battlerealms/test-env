@@ -5,13 +5,26 @@
 <title> 
 Battle Realms: Zen Edition | Online Mini Guide
 </title> 
-       
+
+<!-- Page Icon -->
+
 <link rel = "icon" href =  
 "https://i.imgur.com/8cpGgdK.png" 
  type = "image/x-icon"> 
  
+<!-- Linking CSS styling -->
+ 
 <link rel="stylesheet" type="text/css" href="css/tables.css">
 <link rel="stylesheet" type="text/css" href="css/links.css">
+<link rel="stylesheet" type="text/css" href="css/collapsibles.css">
+<link rel="stylesheet" type="text/css" href="css/widgets.css">
+
+<!-- Google Fonts -->
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Acme' >
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Assistant'>
+
+<!-- Important Data for Thumbs and SEO -->
 
 <meta name="google-site-verification" content="UY3DaxjNTUISp_BdYXTVp-jeqY-Xp-dVtJjoRDD6guw" />
 <meta property="og:locale" content="en_EN"/>
@@ -51,7 +64,8 @@ Battle Realms: Zen Edition | Online Mini Guide
       "memoryRequirements":"1024 MB",
       "storageRequirements":"1024 MB",
       "gamePlatform":["PC game"],
-}</script>
+}
+</script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -102,12 +116,7 @@ function showContent(topic) {
 }
 </script>
 
-
-<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
-
-<style type="text/css">{mso-displayed-decimal-separator:"\."; mso-displayed-thousand-separator:"\,";} 
-
+<style>
 body {
 cursor: url(https://i.imgur.com/R1LDYnL.png), auto;
 background: url(https://i.imgur.com/T6e3IkL.png);
@@ -117,160 +126,6 @@ background-position: center;
 background-attachment: fixed;
 background-color: #000
 }
-
-.wrap-collabsible {
-  margin-bottom: 1.2rem 0;
-}
-
-input[type='checkbox'] {
-  display: none;
-}
-
-.lbl-toggle {
-  display: block;
-  text-align: center;
-  padding: 1px;
-  color: silver;
-  background: rgba(0, 0, 0, 0);
-  cursor: pointer;
-  border-radius: 0px;
-  transition: all 0.25s ease-out;
-}
-
-.lbl-toggle:hover {
-  color: orange;
-}
-
-.lbl-toggle::before {
-  content: ' ';
-  display: inline-block;
-
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid currentColor;
-  vertical-align: middle;
-  margin-right: .4rem;
-  transform: translateY(-2px);
-  transition: transform .2s ease-out;
-}
-
-.toggle:checked + .lbl-toggle::before {
-  transform: rotate(90deg) translateX(-3px);
-}
-
-.toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 800px;
-}
-
-.toggle:checked + .lbl-toggle {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.collapsible-content {
-  max-height: 0px;
-  overflow: hidden;
-
-  transition: max-height .25s max-width .25s ease-in-out;
-}
-
-.collapsible-content .content-inner {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding: .01rem;
-}
-
- .widget {
-  width: 700px;
-  height: 500px;
-  overflow: hidden;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  display: flex; /* Use flexbox to align sidebar and content */
-}
-
-.widget .sidebar {
-  width: 200px; /* Set a fixed width for the sidebar */
-  padding: 10px;
-  overflow-y: auto; /* Make the sidebar scrollable vertically */
-}
-
-  .widget .tab {
-    margin-bottom: 5px;
-    padding: 10px;
-    background-color: transparent; /* Make buttons transparent */
-    border: 1px solid orange; /* Add orange border to buttons */
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-    color: orange; /* Change button text color to orange */
-  }
-
-  .widget .tab:hover {
-    background-color: rgba(255, 165, 0, 0.25); /* Add orange glow on hover */
-  }
-  
-  .widget .tab.active-glow {
-    background-color: rgba(255, 165, 0, 0.25); /* Add orange glow on active tabs */
-    color: yellow; /* Change text color to yellow for active tab */
-}
-  
-  .widget .content-wrapper {
-    width: 70%;
-    height: 95%;
-    padding: 10px;
-    background-color: black; /* Change screen color to black */
-    border: 4px solid rgba(255, 165, 0, 0.5); /* Add less bright orange border */
-    border-radius: 5px;
-    overflow: auto; /* Add overflow for scrolling */
-    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* Add glowy effect */
-  }
-
-  .widget .content {
-    color: white; /* Change text color to white */
-  }
-
-  .widget .content > div {
-    display: none; /* Hide content divs by default */
-  }
-
-  .widget .content > div.active {
-    display: block; /* Display active content div */
-  }
-  .widget h2 {
-  color: yellow;
-}
-
-/* Scrollbar Customizing */
-.widget .sidebar::-webkit-scrollbar {
-  width: 10px; /* Set the width of the scrollbar */
-}
-
-.widget .sidebar::-webkit-scrollbar-track {
-  background: transparent; /* Set the background color of the scrollbar track */
-}
-
-.widget .sidebar::-webkit-scrollbar-thumb {
-background-color: rgba(255, 191, 0, 0.5); /* Set the color of the scrollbar thumb */
-}
-
-.widget .sidebar::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Set the color of the scrollbar thumb on hover */
-}
-.widget .content-wrapper::-webkit-scrollbar {
-  width: 10px; /* Set the width of the scrollbar */
-}
-
-.widget .content-wrapper::-webkit-scrollbar-track {
-  background: transparent; /* Set the background color of the scrollbar track */
-}
-
-.widget .content-wrapper::-webkit-scrollbar-thumb {
-background-color: rgba(255, 191, 0, 0.5); /* Set the color of the scrollbar thumb */
-}
-
-.widget .content-wrapper::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Set the color of the scrollbar thumb on hover */
-}
-
 </style>
 </head>
 
