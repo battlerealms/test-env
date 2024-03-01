@@ -1,29 +1,30 @@
+<!-- CSS for Test Env -->
+
 .xl151547 {
-padding-top:2px;
-padding-right:2px;
-padding-left:2px;
-padding-bottom:2px;
-color:orange;
-font-size:11pt;
-font-weight:400;
-font-style:medium;
-text-decoration:none;
-font-family:Assistant,
-sans-serif,Aubrey;
-mso-generic-font-family:auto;
-mso-font-charset:0;mso-number-format:General;
-text-align:center;
-vertical-align:center;
-background-color: rgba(0, 0, 0, 0.5);
-mso-background-source:auto;
-mso-pattern:auto;
-white-space:nowrap;
+    padding: 2px;
+    color: orange;
+    font: medium 11pt Assistant, sans-serif, Aubrey;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center; /* Adjust as needed */
+    vertical-align: center; /* Adjust as needed */
+    white-space: nowrap;
 }
       
-.xl161547 
-      {
- padding-top:2px; padding-right:2px; padding-left:2px; padding-bottom:2px; color:white; font-size:11pt; font-weight:800; font-style:medium; text-decoration:none; font-family:Assistant, sans-serif,Aubrey; mso-generic-font-family:auto; mso-font-charset:0; mso-number-format:General; text-align:general; vertical-align:center; border:2px groove #7F0000; background-color: rgba(0, 0, 0, 0.5); mso-background-source:auto; mso-pattern:auto; white-space:nowrap;
-      }
+.xl161547 {
+padding-top:2px;
+padding-right:2px;
+      padding-left:2px;
+      padding-bottom:2px;
+      color:white;
+      font-size:11pt;
+      font-weight:800;
+      font-style:medium;
+      text-decoration:none;
+      font-family:Assistant,sans-serif,Aubrey;
+      mso-generic-font-family:auto;
+      mso-font-charset:0; mso-number-format:General; text-align:general; vertical-align:center; border:2px groove #7F0000; background-color: rgba(0, 0, 0, 0.5); mso-background-source:auto; mso-pattern:auto; white-space:nowrap;
+}
       
 .xl251547
       {padding-top:2px; padding-right:2px; padding-left:2px; padding-bottom:2px; mso-ignore:padding; color:windowtext; font-size:11.0pt; font-weight:400; font-style:medium; text-decoration:none; font-family:Assistant, sans-serif,Aubrey; mso-generic-font-family:auto; mso-font-charset:0; mso-number-format:General; text-align:center; vertical-align:center; mso-background-source:auto; mso-pattern:auto; white-space:nowrap;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
