@@ -1,180 +1,58 @@
+/* CSS for Test Env */
+
 .xl151547 {
     padding: 2px;
     color: orange;
     font: medium 11pt Assistant, sans-serif, Aubrey;
-    text-decoration: none;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     vertical-align: center;
-    white-space: nowrap;
 }
-      
+
 .xl161547 {
     padding: 2px;
     color: white;
     font-size: 11pt;
     font-weight: 800;
     font-style: medium;
-    text-decoration: none;
     font-family: Assistant, sans-serif, Aubrey;
-    mso-generic-font-family: auto;
-    mso-font-charset: 0;
-    mso-number-format: General;
-    text-align: left; 
-    vertical-align: center;
     border: 2px groove #7F0000;
     background-color: rgba(0, 0, 0, 0.5);
-    mso-background-source: auto;
-    mso-pattern: auto;
-    white-space: nowrap;
-}
-      
-.xl251547 {
-    padding: 2px;
-    color: windowtext;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-style: medium;
-    text-decoration: none;
-    font-family: Assistant, sans-serif, Aubrey;
-    mso-generic-font-family: auto;
-    mso-font-charset: 0;
-    mso-number-format: General;
-    text-align: center;
-    vertical-align: center;
-    mso-background-source: auto;
-    mso-pattern: auto;
-    white-space: nowrap;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-      
-.xl261547 {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-style: medium;
-    text-decoration: none;
-    font-family: Assistant, sans-serif, Aubrey;
-    mso-generic-font-family: auto;
-    mso-font-charset: 0;
-    mso-number-format: General;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #442200;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-source: auto;
-    mso-pattern: auto;
-    white-space: normal;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
- 
-.xl271547 {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-style: medium;
-    text-decoration: none;
-    font-family: Acme, sans-serif, Aubrey;
-    mso-generic-font-family: auto;
-    mso-font-charset: 0;
-    mso-number-format: General;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #442200;
-    mso-background-source: auto;
-    mso-pattern: auto;
-    white-space: normal;
 }
 
-.xl271547_D {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #7a3c00;
-    mso-background-color: rgba(0, 0, 0, 0.5);
-    white-space: normal;
-    max-width: 10rem;
-    text-shadow: 1px 1px 1px black;
-}
- 
-.xl271547_S {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #660000;
-    mso-background-color: rgba(0, 0, 0, 0.5);
-    white-space: normal;
-    max-width: 10rem;
-    text-shadow: 1px 1px 1px black;
-}
-
-.xl271547_W {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #004000;
-    mso-background-color: rgba(0, 0, 0, 0.5);
-    white-space: normal;
-    max-width: 10rem;
-    text-shadow: 1px 1px 1px black;
-}
-
-.xl271547_L {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #4c004c;
-    mso-background-color: rgba(0, 0, 0, 0.5);
-    white-space: normal;
-    max-width: 10rem;
-    text-shadow: 1px 1px 1px black;
-}
-
+.xl251547,
+.xl261547,
+.xl271547,
+.xl271547_D,
+.xl271547_S,
+.xl271547_W,
+.xl271547_L,
 .xl271547_N {
-  padding: 2px;
-  color: silver;
-  font-size: 11.0pt;
-  font-weight: 400;
-  font-family: Assistant, sans-serif, Aubrey;
-  text-align: center;
-  vertical-align: center;
-  border: 2px groove #595959;
-  background-color: rgba(0, 0, 0, 0.5);
-  white-space: normal;
-  max-width: 10rem;
-  text-shadow: 1px 1px 1px black;
+    padding: 2px;
+    color: silver;
+    font-size: 11pt;
+    font-weight: 400;
+    font-style: medium;
+    font-family: Assistant, sans-serif, Aubrey;
+    text-align: center;
+    vertical-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    max-width: 10rem;
+    text-shadow: 1px 1px 1px black;
 }
 
 .xl281547 {
-  padding: 2px;
-  color: white;
-  font-size: 12.0pt;
-  font-weight: 400;
-  font-style: medium;
-  text-decoration: none;
-  font-family: Assistant, sans-serif, Aubrey;
-  text-align: center;
-  vertical-align: center;
-  border: 2px solid windowtext;
-  background: #79180B;
-  white-space: nowrap;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 2px;
+    color: white;
+    font-size: 12pt;
+    font-weight: 400;
+    font-style: medium;
+    font-family: Assistant, sans-serif, Aubrey;
+    text-align: center;
+    vertical-align: center;
+    border: 2px solid windowtext;
+    background: #79180B;
+    white-space: nowrap;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
