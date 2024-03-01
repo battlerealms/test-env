@@ -19,10 +19,15 @@
     font-style: medium;
     text-decoration: none;
     font-family: Assistant, sans-serif, Aubrey;
+    mso-generic-font-family: auto;
+    mso-font-charset: 0;
+    mso-number-format: General;
     text-align: left; 
     vertical-align: center;
     border: 2px groove #7F0000;
     background-color: rgba(0, 0, 0, 0.5);
+    mso-background-source: auto;
+    mso-pattern: auto;
     white-space: nowrap;
 }
       
@@ -34,8 +39,13 @@
     font-style: medium;
     text-decoration: none;
     font-family: Assistant, sans-serif, Aubrey;
+    mso-generic-font-family: auto;
+    mso-font-charset: 0;
+    mso-number-format: General;
     text-align: center;
     vertical-align: center;
+    mso-background-source: auto;
+    mso-pattern: auto;
     white-space: nowrap;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -48,10 +58,15 @@
     font-style: medium;
     text-decoration: none;
     font-family: Assistant, sans-serif, Aubrey;
+    mso-generic-font-family: auto;
+    mso-font-charset: 0;
+    mso-number-format: General;
     text-align: center;
     vertical-align: center;
     border: 2px groove #442200;
     background-color: rgba(0, 0, 0, 0.5);
+    background-source: auto;
+    mso-pattern: auto;
     white-space: normal;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -64,10 +79,14 @@
     font-style: medium;
     text-decoration: none;
     font-family: Acme, sans-serif, Aubrey;
+    mso-generic-font-family: auto;
+    mso-font-charset: 0;
+    mso-number-format: General;
     text-align: center;
     vertical-align: center;
     border: 2px groove #442200;
-    background-color: rgba(0, 0, 0, 0.5);
+    mso-background-source: auto;
+    mso-pattern: auto;
     white-space: normal;
 }
 
@@ -80,7 +99,7 @@
     text-align: center;
     vertical-align: center;
     border: 2px groove #7a3c00;
-    background-color: rgba(0, 0, 0, 0.5);
+    mso-background-color: rgba(0, 0, 0, 0.5);
     white-space: normal;
     max-width: 10rem;
     text-shadow: 1px 1px 1px black;
@@ -95,7 +114,7 @@
     text-align: center;
     vertical-align: center;
     border: 2px groove #660000;
-    background-color: rgba(0, 0, 0, 0.5);
+    mso-background-color: rgba(0, 0, 0, 0.5);
     white-space: normal;
     max-width: 10rem;
     text-shadow: 1px 1px 1px black;
@@ -110,7 +129,7 @@
     text-align: center;
     vertical-align: center;
     border: 2px groove #004000;
-    background-color: rgba(0, 0, 0, 0.5);
+    mso-background-color: rgba(0, 0, 0, 0.5);
     white-space: normal;
     max-width: 10rem;
     text-shadow: 1px 1px 1px black;
@@ -125,39 +144,39 @@
     text-align: center;
     vertical-align: center;
     border: 2px groove #4c004c;
-    background-color: rgba(0, 0, 0, 0.5);
+    mso-background-color: rgba(0, 0, 0, 0.5);
     white-space: normal;
     max-width: 10rem;
     text-shadow: 1px 1px 1px black;
 }
 
 .xl271547_N {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #595959;
-    background-color: rgba(0, 0, 0, 0.5);
-    white-space: normal;
-    max-width: 10rem;
-    text-shadow: 1px 1px 1px black;
+  padding: 2px;
+  color: silver;
+  font-size: 11.0pt;
+  font-weight: 400;
+  font-family: Assistant, sans-serif, Aubrey;
+  text-align: center;
+  vertical-align: center;
+  border: 2px groove #595959;
+  background-color: rgba(0, 0, 0, 0.5);
+  white-space: normal;
+  max-width: 10rem;
+  text-shadow: 1px 1px 1px black;
 }
 
 .xl281547 {
-    padding: 2px;
-    color: white;
-    font-size: 12.0pt;
-    font-weight: 400;
-    font-style: medium;
-    text-decoration: none;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px solid windowtext;
-    background: #79180B;
-    white-space: nowrap;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding: 2px;
+  color: white;
+  font-size: 12.0pt;
+  font-weight: 400;
+  font-style: medium;
+  text-decoration: none;
+  font-family: Assistant, sans-serif, Aubrey;
+  text-align: center;
+  vertical-align: center;
+  border: 2px solid windowtext;
+  background: #79180B;
+  white-space: nowrap;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
