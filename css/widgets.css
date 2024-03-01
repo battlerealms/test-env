@@ -1,0 +1,92 @@
+/* Infobox with tabs and scrollbar */
+ 
+.widget {
+  width: 700px;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex; /* Use flexbox to align sidebar and content */
+}
+
+.widget .sidebar {
+  width: 200px; /* Set a fixed width for the sidebar */
+  padding: 10px;
+  overflow-y: auto; /* Make the sidebar scrollable vertically */
+}
+
+  .widget .tab {
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: transparent; /* Make buttons transparent */
+    border: 1px solid orange; /* Add orange border to buttons */
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    color: orange; /* Change button text color to orange */
+  }
+
+  .widget .tab:hover {
+    background-color: rgba(255, 165, 0, 0.25); /* Add orange glow on hover */
+  }
+  
+  .widget .tab.active-glow {
+    background-color: rgba(255, 165, 0, 0.25); /* Add orange glow on active tabs */
+    color: yellow; /* Change text color to yellow for active tab */
+}
+  
+  .widget .content-wrapper {
+    width: 70%;
+    height: 95%;
+    padding: 10px;
+    background-color: black; /* Change screen color to black */
+    border: 4px solid rgba(255, 165, 0, 0.5); /* Add less bright orange border */
+    border-radius: 5px;
+    overflow: auto; /* Add overflow for scrolling */
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* Add glowy effect */
+  }
+
+  .widget .content {
+    color: white; /* Change text color to white */
+  }
+
+  .widget .content > div {
+    display: none; /* Hide content divs by default */
+  }
+
+  .widget .content > div.active {
+    display: block; /* Display active content div */
+  }
+  .widget h2 {
+  color: yellow;
+}
+
+/* Scrollbar Customizing */
+.widget .sidebar::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+.widget .sidebar::-webkit-scrollbar-track {
+  background: transparent; /* Set the background color of the scrollbar track */
+}
+
+.widget .sidebar::-webkit-scrollbar-thumb {
+background-color: rgba(255, 191, 0, 0.5); /* Set the color of the scrollbar thumb */
+}
+
+.widget .sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scrollbar thumb on hover */
+}
+.widget .content-wrapper::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+.widget .content-wrapper::-webkit-scrollbar-track {
+  background: transparent; /* Set the background color of the scrollbar track */
+}
+
+.widget .content-wrapper::-webkit-scrollbar-thumb {
+background-color: rgba(255, 191, 0, 0.5); /* Set the color of the scrollbar thumb */
+}
+
+.widget .content-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scrollbar thumb on hover */
+}
