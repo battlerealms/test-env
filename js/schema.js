@@ -1,5 +1,4 @@
-<script type="application/ld+json">
-    {
+ {
       "@context": "http://schema.org",
       "@type": "VideoGame",
       "name": "Battle Realms: Zen Edition",
@@ -19,4 +18,3 @@
       "storageRequirements":"1024 MB",
       "gamePlatform":["PC game"],
 }
-</script>
