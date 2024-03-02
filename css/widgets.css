@@ -93,14 +93,30 @@ background-color: rgba(255, 191, 0, 0.5); /* Set the color of the scrollbar thum
 
 /* Discord Link Button Styling */
 
-#discord-button {
- position: fixed;
- bottom: 20px;
- right: 20px;
- z-index: 9999;
- transition: transform 0.3s ease;
+.discord-button {
+  width: 200px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.3); 
+  border: 2px solid orange;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: orange; /* Orange text */
+  font-family: 'Assistant', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
 }
 
-#discord-button:hover {
- transform: scale(1.1);
+.discord-button img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.discord-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
