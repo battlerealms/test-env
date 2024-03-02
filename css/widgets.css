@@ -90,3 +90,17 @@ background-color: rgba(255, 191, 0, 0.5); /* Set the color of the scrollbar thum
 .widget .content-wrapper::-webkit-scrollbar-thumb:hover {
   background: #555; /* Set the color of the scrollbar thumb on hover */
 }
+
+/* Discord Link Button Styling */
+
+#discord-button {
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ z-index: 9999;
+ transition: transform 0.3s ease;
+}
+
+#discord-button:hover {
+ transform: scale(1.1);
+}
