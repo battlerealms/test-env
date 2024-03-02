@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <!-- Credits to alecThunder and the-barracks.com for creating the original info table. Updated and redesigned by KoMiKoZa for the Battle Realms Community. -->
 <html>
+
 <head>
+
 <title> 
 Battle Realms: Zen Edition | Online Mini Guide
 </title> 
@@ -14,10 +17,12 @@ Battle Realms: Zen Edition | Online Mini Guide
  
 <!-- Linking CSS styling -->
  
+<link rel="stylesheet" type="text/css" href="css/body.css">
 <link rel="stylesheet" type="text/css" href="css/tables.css">
 <link rel="stylesheet" type="text/css" href="css/links.css">
 <link rel="stylesheet" type="text/css" href="css/collapsibles.css">
 <link rel="stylesheet" type="text/css" href="css/widgets.css">
+
 
 <!-- Google Fonts -->
 
@@ -44,91 +49,10 @@ Battle Realms: Zen Edition | Online Mini Guide
 <meta name="twitter:title" content="Battle Realms Guide: Mini Version (1.58.3 - Zen Edition/Steam)">
 <meta name="twitter:description" content="Online reference with a lot of useful information about Battle Realms and its mechanics.">
 <meta name="twitter:image" content="https://i.imgur.com/TMU6V6N.png">
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "VideoGame",
-      "name": "Battle Realms: Zen Edition",
-      "url": "http://battlerealms.com",
-      "image": "https://i.imgur.com/Fanupyc.png",
-      "description": "Battle Realms is a fantasy real-time strategy game inspired by the stories told in Martial Arts movies and oriental mythology. Develop your tiny peasant village into a highly trained and deadly efficient clan of warriors who are ready to die with your name on their lips.",
-      "inLanguage":["English"],
-      },
-      "author":{
-        "@type":"Organization",
-        "name":"Ed Del Castillo",
-    },
-      "publisher":"Ed Del Castillo",
-      "genre":["Real-Time Strategy","3D","Action"],
-      "processorRequirements":"3.2Hz",
-      "memoryRequirements":"1024 MB",
-      "storageRequirements":"1024 MB",
-      "gamePlatform":["PC game"],
-}
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
 
-  // Add event listeners to all tab button
-  var tabButtons = document.querySelectorAll('.tab');
-  tabButtons.forEach(function(tab) {
-    tab.addEventListener('click', function() {
-    
-      // Remove glow effect from all tab buttons
-      tabButtons.forEach(function(tab) {
-        tab.classList.remove('active-glow');
-      });
-
-      // Add glow effect to the clicked tab button
-      this.classList.add('active-glow');
-    });
-  });
-
-  // Add active class to the default active tab button
-  document.querySelector('.tab:first-child').classList.add('active');
-
-  // Add glow effect to default active tab button
-  document.querySelector('.tab.active').classList.add('active-glow');
-});
-
-function showContent(topic) {
-  var contentDivs = document.querySelectorAll('.widget .content > div');
-  var tabButtons = document.querySelectorAll('.widget .tab');
-
-  // Remove active class from all content divs
-  contentDivs.forEach(function(div) {
-    div.classList.remove('active');
-  });
-
-  // Remove glow effect from all tab buttons
-  tabButtons.forEach(function(tab) {
-    tab.classList.remove('active-glow');
-  });
-
-  // Add active class to the clicked content div
-  document.getElementById(topic).classList.add('active');
-
-  // Add glow effect to the clicked tab button
-  var clickedTab = document.querySelector('.tab[data-topic="' + topic + '"]');
-  if (clickedTab) {
-    clickedTab.classList.add('active-glow');
-  }
-}
-</script>
-
-<style>
-body {
-cursor: url(https://i.imgur.com/R1LDYnL.png), auto;
-background: url(https://i.imgur.com/T6e3IkL.png);
-background-repeat: no-repeat;
-//background-size: cover, contain;
-background-position: center;
-background-attachment: fixed;
-background-color: #000
-}
-</style>
 </head>
 
+<body>
 <table cellspacing="2" width="700" style="margin-left:auto;margin-right:auto;">
 
 <tr>
@@ -1314,6 +1238,10 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
     <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">0%</td>
     <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">0%</td>
   </tr>
-
 </table>
+	    
+<!-- Linking JS scripts -->
+<script src="js/schema.js"></script>
+<script src="js/tabwidget.js"></script>
+</body>    
 </html>
