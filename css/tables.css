@@ -5,7 +5,7 @@
     color: orange;
     font: medium 11pt Assistant, sans-serif, Aubrey;
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
     vertical-align: center;
     white-space: nowrap;
@@ -22,7 +22,7 @@
     text-align: left; 
     vertical-align: center;
     border: 2px groove #7F0000;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     white-space: nowrap;
 }
       
@@ -51,7 +51,7 @@
     text-align: center;
     vertical-align: center;
     border: 2px groove #442200;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     white-space: normal;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -67,7 +67,7 @@
     text-align: center;
     vertical-align: center;
     border: 2px groove #442200;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     white-space: normal;
 }
 
@@ -80,7 +80,7 @@
     text-align: center;
     vertical-align: center;
     border: 2px groove #7a3c00;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     white-space: normal;
     max-width: 10rem;
     text-shadow: 1px 1px 1px black;
@@ -95,7 +95,7 @@
     text-align: center;
     vertical-align: center;
     border: 2px groove #660000;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     white-space: normal;
     max-width: 10rem;
     text-shadow: 1px 1px 1px black;
@@ -110,7 +110,7 @@
     text-align: center;
     vertical-align: center;
     border: 2px groove #004000;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     white-space: normal;
     max-width: 10rem;
     text-shadow: 1px 1px 1px black;
@@ -125,7 +125,7 @@
     text-align: center;
     vertical-align: center;
     border: 2px groove #4c004c;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     white-space: normal;
     max-width: 10rem;
     text-shadow: 1px 1px 1px black;
@@ -140,7 +140,7 @@
     text-align: center;
     vertical-align: center;
     border: 2px groove #595959;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     white-space: normal;
     max-width: 10rem;
     text-shadow: 1px 1px 1px black;
