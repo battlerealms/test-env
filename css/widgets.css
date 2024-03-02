@@ -93,9 +93,16 @@ background-color: rgba(255, 191, 0, 0.5); /* Set the color of the scrollbar thum
 
 /* Discord Link Button Styling */
 
+.discord-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
 .discord-button {
-  width: 200px;
-  height: 100px;
+  width: 125px;
+  height: 75px;
   background-color: rgba(0, 0, 0, 0.3); 
   border: 2px solid orange;
   border-radius: 15px;
@@ -103,11 +110,13 @@ background-color: rgba(255, 191, 0, 0.5); /* Set the color of the scrollbar thum
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  color: orange; /* Orange text */
+  color: orange;
   font-family: 'Assistant', sans-serif;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: bold;
   transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+  box-shadow: 0 0 10px orange;
 }
 
 .discord-button img {
