@@ -9,7 +9,7 @@
      border-collapse: collapse;
     }
 
-    .th, td {
+    th, td {
     /* Allow cells to dynamically adjust to content */
     white-space: nowrap;
     }
