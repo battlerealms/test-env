@@ -1,5 +1,11 @@
 /* Link styling for Test Env */
 
+/* Global Cursor Controls */
+
+a {
+  cursor: url(https://i.imgur.com/mDJvGsf.png), auto;
+}
+
 /* Don't-Remember-What-This-Is Link */
 
 a.simplink:link, a.simplink:visited {
