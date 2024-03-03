@@ -16,7 +16,7 @@ document.querySelectorAll('.lbl-toggle').forEach(function(label) {
         $(".coltab").toggleClass("activetable"); 
         if ($(".coltab").hasClass("activetable")) {
           $("#openButton").text("Close");
-          $(".table__wrapper").css("max-height", "400px"); // Expand rows
+          $(".table__wrapper").css("max-height", "800px"); // Expand rows
         } else {
           $("#openButton").text("Open");
           $(".table__wrapper").css("max-height", "0px"); // Collapse rows
