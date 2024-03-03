@@ -13,8 +13,8 @@ document.querySelectorAll('.lbl-toggle').forEach(function(label) {
       // Target the new button
       $("#openButton").click(function() {
         // Toggle the class and text of the coltab row
-        $(".coltab").toggleClass("active"); 
-        if ($(".coltab").hasClass("active")) {
+        $(".coltab").toggleClass("activetable"); 
+        if ($(".coltab").hasClass("activetable")) {
           $("#openButton").text("Close");
           $(".table__wrapper").css("max-height", "400px"); // Expand rows
         } else {
