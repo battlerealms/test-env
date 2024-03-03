@@ -1,12 +1,11 @@
 /* 2024 Table Upgrades... Getting on with the times?*/
 
     .table-wrapper {
-      max-width: 700px;
       text-align: center;
     }
 
     .table {
-      width: 100%;
+     /* width: 100%; */
       /* border-collapse: collapse; */
     }
 
@@ -16,7 +15,7 @@
       cursor: pointer;
       background-color: orange;
       position: absolute;
-      bottom: 500px;
+      bottom: 1000px;
       left: 500px;
       color: #000;
       padding: 5px 10px;
