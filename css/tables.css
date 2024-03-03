@@ -2,25 +2,25 @@
 
     .table-wrapper {
       max-width: 700px;
-      text-align: center;
+     /* text-align: center; */
     }
 
     .table {
       width: 100%;
-      border-collapse: collapse;
+      /* border-collapse: collapse; */
     }
 
-    .table th,
+   /* .table th,
     .table td {
       padding: 4px;
-    }
+    } */
 
     .coltab-button {
       display: inline-block;
       margin-bottom: 10px;
       cursor: pointer;
       background-color: orange;
-      position: fixed;
+      position: relative;
       down: 1000px;
       right: 250px;
       color: #fff;
