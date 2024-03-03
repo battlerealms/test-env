@@ -21,7 +21,7 @@
       margin-bottom: 10px;
       cursor: pointer;
       background-color: orange;
-      position: relative;
+      position: absolute;
       bottom: 500px;
       right: 250px;
       color: #fff;
