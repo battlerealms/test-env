@@ -1,7 +1,6 @@
 /* 2024 Table Upgrades... Getting on with the times?*/
 
     .table-wrapper {
-      margin: 20px auto;
       max-width: 700px;
       text-align: center;
     }
@@ -21,8 +20,8 @@
       margin-bottom: 10px;
       cursor: pointer;
       background-color: #2cc16a;
-      position: fixed;
-      left: 250px;
+      position: relative;
+      /* left: 250px; */
       color: #fff;
       padding: 5px 10px;
       border: none;
