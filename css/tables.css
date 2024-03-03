@@ -5,9 +5,14 @@
     }
 
     .table {
-     /* width: 100%; */
-      /* border-collapse: collapse; */
+     width: 100%;
+     border-collapse: collapse;
     }
+
+th, td {
+    /* Allow cells to dynamically adjust to content */
+    white-space: nowrap;
+}
 
     .coltab-button {
       display: inline-block;
