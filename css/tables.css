@@ -19,9 +19,10 @@
       display: inline-block;
       margin-bottom: 10px;
       cursor: pointer;
-      background-color: orange
+      background-color: orange;
       position: fixed;
-      /* left: 250px; */
+      down: 1000px;
+      right: 250px;
       color: #fff;
       padding: 5px 10px;
       border: none;
@@ -30,7 +31,7 @@
       
     }
     .coltab-button:hover {
-      background-color: #1e9548;
+      background-color: yellow;
     }
 
     .table__wrapper {
