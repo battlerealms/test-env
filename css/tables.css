@@ -30,6 +30,7 @@
 
     .table__wrapper {
       overflow: hidden;
+      overflow-x: auto;
       max-height: 0;
       transition: max-height 0.5s;
     }
