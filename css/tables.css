@@ -20,8 +20,8 @@
       margin-bottom: 10px;
       cursor: pointer;
       background-color: orange;
-      position: relative;
-      down: 1000px;
+      position: fixed;
+      bottom: 1000px;
       right: 250px;
       color: #fff;
       padding: 5px 10px;
