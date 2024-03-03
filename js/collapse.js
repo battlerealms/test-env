@@ -9,12 +9,17 @@ document.querySelectorAll('.lbl-toggle').forEach(function(label) {
 
 //Animation of collapsing/expanding for tables
 
-$("tr.collapse").find("span#collapse").click(function() {
-  $(this).parents("tr.collapse").toggleClass("active"); 
-  
-  if ($(this).text() == "Open")
-       $(this).text("Close")
-    else
-       $(this).text("Open");
-
-});
+    $(document).ready(function() {
+      // Target the new button
+      $("#openButton").click(function() {
+        // Toggle the class and text of the coltab row
+        $(".coltab").toggleClass("active"); 
+        if ($(".coltab").hasClass("active")) {
+          $("#openButton").text("Close");
+          $(".table__wrapper").css("max-height", "400px"); // Expand rows
+        } else {
+          $("#openButton").text("Open");
+          $(".table__wrapper").css("max-height", "0px"); // Collapse rows
+        }
+      });
+    });
