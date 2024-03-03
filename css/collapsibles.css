@@ -14,7 +14,7 @@ input[type='checkbox'] {
   padding: 1px;
   color: silver;
   background: rgba(0, 0, 0, 0);
-  cursor: pointer;
+  cursor: url(https://i.imgur.com/mDJvGsf.png), auto;
   border-radius: 0px;
   transition: all 0.25s ease-out;
 }
