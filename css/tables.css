@@ -1,163 +1,209 @@
-/* CSS for Test Env */
+/* 2024 Table Upgrades... Getting on with the times?*/
 
-.xl151547 {
-    padding: 2px;
-    color: orange;
-    font: medium 11pt Assistant, sans-serif, Aubrey;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.3);
-    text-align: center;
-    vertical-align: center;
-    white-space: nowrap;
-}
+    .table-wrapper {
+      margin: 20px auto;
+      max-width: 700px;
+      text-align: center;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .table th,
+    .table td {
+      padding: 4px;
+    }
+
+    .coltab-button {
+      display: inline-block;
+      margin-bottom: 10px;
+      cursor: pointer;
+      background-color: #2cc16a;
+      position: fixed;
+      left: 250px;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
       
-.xl161547 {
-    padding: 2px;
-    color: white;
-    font-size: 11pt;
-    font-weight: 800;
-    font-style: medium;
-    text-decoration: none;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: left; 
-    vertical-align: center;
-    border: 2px groove #7F0000;
-    background-color: rgba(0, 0, 0, 0.3);
-    white-space: nowrap;
-}
-      
-.xl251547 {
-    padding: 2px;
-    color: windowtext;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-style: medium;
-    text-decoration: none;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    white-space: nowrap;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-      
-.xl261547 {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-style: medium;
-    text-decoration: none;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #442200;
-    background-color: rgba(0, 0, 0, 0.3);
-    white-space: normal;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
+    }
+    .coltab-button:hover {
+      background-color: #1e9548;
+    }
+
+    .table__wrapper {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.5s;
+    }
+
+    .table-inner {
+      width: 100%;
+    }
+
+/* Original CSS */
+
+    .xl151547 {
+      padding: 2px;
+      color: orange;
+      font: medium 11pt Assistant, sans-serif, Aubrey;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      vertical-align: center;
+      white-space: nowrap;
+    }
+
+    .xl161547 {
+      padding: 2px;
+      color: white;
+      font-size: 11pt;
+      font-weight: 800;
+      font-style: medium;
+      text-decoration: none;
+      font-family: Assistant, sans-serif, Aubrey;
+      text-align: left; 
+      vertical-align: center;
+      border: 2px groove #7F0000;
+      background-color: rgba(0, 0, 0, 0.3);
+      white-space: nowrap;
+    }
+
+    .xl251547 {
+      padding: 2px;
+      color: windowtext;
+      font-size: 11.0pt;
+      font-weight: 400;
+      font-style: medium;
+      text-decoration: none;
+      font-family: Assistant, sans-serif, Aubrey;
+      text-align: center;
+      vertical-align: center;
+      white-space: nowrap;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .xl261547 {
+      padding: 2px;
+      color: silver;
+      font-size: 11.0pt;
+      font-weight: 400;
+      font-style: medium;
+      text-decoration: none;
+      font-family: Assistant, sans-serif, Aubrey;
+      text-align: center;
+      vertical-align: center;
+      border: 2px groove #442200;
+      background-color: rgba(0, 0, 0, 0.3);
+      white-space: normal;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
  
-.xl271547 {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-style: medium;
-    text-decoration: none;
-    font-family: Acme, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #442200;
-    background-color: rgba(0, 0, 0, 0.3);
-    white-space: normal;
-}
+    .xl271547 {
+      padding: 2px;
+      color: silver;
+      font-size: 11.0pt;
+      font-weight: 400;
+      font-style: medium;
+      text-decoration: none;
+      font-family: Acme, sans-serif, Aubrey;
+      text-align: center;
+      vertical-align: center;
+      border: 2px groove #442200;
+      background-color: rgba(0, 0, 0, 0.3);
+      white-space: normal;
+    }
 
-.xl271547_D {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #7a3c00;
-    background-color: rgba(0, 0, 0, 0.3);
-    white-space: normal;
-    max-width: 10rem;
-    text-shadow: 1px 1px 1px black;
-}
+    .xl271547_D {
+      padding: 2px;
+      color: silver;
+      font-size: 11.0pt;
+      font-weight: 400;
+      font-family: Assistant, sans-serif, Aubrey;
+      text-align: center;
+      vertical-align: center;
+      border: 2px groove #7a3c00;
+      background-color: rgba(0, 0, 0, 0.3);
+      white-space: normal;
+      max-width: 10rem;
+      text-shadow: 1px 1px 1px black;
+    }
  
-.xl271547_S {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #660000;
-    background-color: rgba(0, 0, 0, 0.3);
-    white-space: normal;
-    max-width: 10rem;
-    text-shadow: 1px 1px 1px black;
-}
+    .xl271547_S {
+      padding: 2px;
+      color: silver;
+      font-size: 11.0pt;
+      font-weight: 400;
+      font-family: Assistant, sans-serif, Aubrey;
+      text-align: center;
+      vertical-align: center;
+      border: 2px groove #660000;
+      background-color: rgba(0, 0, 0, 0.3);
+      white-space: normal;
+      max-width: 10rem;
+      text-shadow: 1px 1px 1px black;
+    }
 
-.xl271547_W {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #004000;
-    background-color: rgba(0, 0, 0, 0.3);
-    white-space: normal;
-    max-width: 10rem;
-    text-shadow: 1px 1px 1px black;
-}
+    .xl271547_W {
+      padding: 2px;
+      color: silver;
+      font-size: 11.0pt;
+      font-weight: 400;
+      font-family: Assistant, sans-serif, Aubrey;
+      text-align: center;
+      vertical-align: center;
+      border: 2px groove #004000;
+      background-color: rgba(0, 0, 0, 0.3);
+      white-space: normal;
+      max-width: 10rem;
+      text-shadow: 1px 1px 1px black;
+    }
 
-.xl271547_L {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #4c004c;
-    background-color: rgba(0, 0, 0, 0.3);
-    white-space: normal;
-    max-width: 10rem;
-    text-shadow: 1px 1px 1px black;
-}
+    .xl271547_L {
+      padding: 2px;
+      color: silver;
+      font-size: 11.0pt;
+      font-weight: 400;
+      font-family: Assistant, sans-serif, Aubrey;
+      text-align: center;
+      vertical-align: center;
+      border: 2px groove #4c004c;
+      background-color: rgba(0, 0, 0, 0.3);
+      white-space: normal;
+      max-width: 10rem;
+      text-shadow: 1px 1px 1px black;
+    }
 
-.xl271547_N {
-    padding: 2px;
-    color: silver;
-    font-size: 11.0pt;
-    font-weight: 400;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px groove #595959;
-    background-color: rgba(0, 0, 0, 0.3);
-    white-space: normal;
-    max-width: 10rem;
-    text-shadow: 1px 1px 1px black;
-}
+    .xl271547_N {
+      padding: 2px;
+      color: silver;
+      font-size: 11.0pt;
+      font-weight: 400;
+      font-family: Assistant, sans-serif, Aubrey;
+      text-align: center;
+      vertical-align: center;
+      border: 2px groove #595959;
+      background-color: rgba(0, 0, 0, 0.3);
+      white-space: normal;
+      max-width: 10rem;
+      text-shadow: 1px 1px 1px black;
+    }
 
-.xl281547 {
-    padding: 2px;
-    color: white;
-    font-size: 12.0pt;
-    font-weight: 400;
-    font-style: medium;
-    text-decoration: none;
-    font-family: Assistant, sans-serif, Aubrey;
-    text-align: center;
-    vertical-align: center;
-    border: 2px solid windowtext;
-    background: #79180B;
-    white-space: nowrap;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
+    .xl281547 {
+      padding: 2px;
+      color: white;
+      font-size: 12.0pt;
+      font-weight: 400;
+      font-style: medium;
+      text-decoration: none;
+      font-family: Assistant, sans-serif, Aubrey;
+      text-align: center;
+      vertical-align: center;
+      border: 2px solid windowtext;
+      background: #79180B;
+      white-space: nowrap;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
