@@ -8,34 +8,19 @@ document.querySelectorAll('.lbl-toggle').forEach(function(label) {
 });
 
 //Animation of collapsing/expanding for tables
-
-$(document).ready(function() {
-  // Target the new button
-  $("#openButton").click(function() {
-    // Toggle the class and text of the coltab row
-    $(".coltab").toggleClass("activetable"); 
-    if ($(".coltab").hasClass("activetable")) {
-      $("#openButton").text("Close");
-      $(".coltab").css("max-height", "800px"); // Expand rows
-    } else {
-      $("#openButton").text("Open");
-      $(".coltab").css("max-height", "0px"); // Collapse rows
-    }
-  });
-});
-
-
-  //  $(document).ready(function() {
+ $(document).ready(function() {
+   
       // Target the new button
-    //  $("#openButton").click(function() {
+  $("#openButton").click(function() {
+    
         // Toggle the class and text of the coltab row
-     //   $(".coltab").toggleClass("activetable"); 
-      //  if ($(".coltab").hasClass("activetable")) {
-       //   $("#openButton").text("Close");
-        //  $(".table__wrapper").css("max-height", "800px"); // Expand rows
-      //  } else {
-       //   $("#openButton").text("Open");
-       //   $(".table__wrapper").css("max-height", "0px"); // Collapse rows
-     //   }
-   //   });
-  //  });
+     $(".coltab").toggleClass("activetable"); 
+      if ($(".coltab").hasClass("activetable")) {
+        $("#openButton").text("Close");
+         $(".table__wrapper").css("max-height", "800px"); // Expand rows
+      } else {
+        $("#openButton").text("Open");
+         $(".table__wrapper").css("max-height", "0px"); // Collapse rows
+       }
+     });
+   });
