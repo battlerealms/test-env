@@ -7,12 +7,11 @@
 
     .table {
       width: 100%;
-      border-collapse: collapse;
+      /* border-collapse: collapse; */
     }
 
     .table th,
     .table td {
-      padding: 8px;
       width: 50%;
     } 
 
@@ -22,7 +21,7 @@
       cursor: pointer;
       background-color: orange;
       position: absolute;
-      bottom: 500px;
+      bottom: 1000px;
       right: 250px;
       color: #fff;
       padding: 5px 10px;
