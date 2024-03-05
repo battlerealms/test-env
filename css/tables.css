@@ -13,9 +13,7 @@ table.expanded {
   }
 
 .toggleButtonContainer {
-  position: relative;
-  left: 20px;
-  top: 20px;
+  position: absolute;
   width: 30px;
   height: 30px;
   border-radius: 5px; /* Rounded corners */
