@@ -19,3 +19,10 @@ function toggleTable(tableId, button) {
   // Toggle the class for button animation
   button.classList.toggle("expand");
 }
+
+  // Set width inline
+  if (table.classList.contains("collapsed")) {
+    table.style.width = "700px";
+  } else {
+    table.style.width = "700px";
+  }
