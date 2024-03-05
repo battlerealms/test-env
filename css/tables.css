@@ -5,6 +5,8 @@ table.collapsed {
     display: block; /* Ensure the table behaves like a block element */
     max-height: 30px; /* 4 rows * 12px (header height) */
     transition: max-height 0.5s ease; /* Add smooth transition */
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table horizontally */
   }
 
 table.expanded {
