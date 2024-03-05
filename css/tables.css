@@ -1,18 +1,21 @@
 /* 2024 Table Upgrades... Getting on with the times?*/
 
-table.collapsed {
-    display: block;
-    table-layout: fixed;
+.unitable {
     overflow: hidden;
-    max-width: 700px; /* Set max-width for collapsed state */
+    display: block; /* Ensure the table behaves like a block element */
     max-height: 30px; 
+    table-layout: fixed;
+  }
+
+.unitable.collapsed {
+    max-width: 700px; /* Set max-width for collapsed state */
     transition: max-height 0.5s ease; /* Add smooth transition */
   }
 
-table.expanded {
+.unitable.expanded {
     max-height: 1000px; /* Set max-height for full expansion */
     max-width: 700px; /* Set max-width for collapsed state */
-    transition: max-height 0.5s ease; /* Add smooth transition */
+    transition: max-height 0.75s ease; /* Add smooth transition */
   }
 
 .toggleButtonContainer {
