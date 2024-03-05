@@ -5,15 +5,12 @@ table.collapsed {
     display: block; /* Ensure the table behaves like a block element */
     max-height: 30px; /* 4 rows * 12px (header height) */
     transition: max-height 0.5s ease; /* Add smooth transition */
-    width: 80%;
     margin: 0 auto; /* Center the table horizontally */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
 table.expanded {
     max-height: 1000px; /* Set max-height for full expansion */
     transition: max-height 0.5s ease; /* Add smooth transition */
-    width: 80%;
   }
 
 .toggleButtonContainer {
