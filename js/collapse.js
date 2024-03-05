@@ -8,19 +8,14 @@ document.querySelectorAll('.lbl-toggle').forEach(function(label) {
 });
 
 //Animation of collapsing/expanding for tables
- $(document).ready(function() {
-   
-      // Target the new button
-  $("#openButton").click(function() {
-    
-        // Toggle the class and text of the coltab row
-     $(".coltab").toggleClass("activetable"); 
-      if ($(".coltab").hasClass("activetable")) {
-        $("#openButton").text("Close");
-         $(".table__wrapper").css("max-height", "800px"); // Expand rows
-      } else {
-        $("#openButton").text("Open");
-         $(".table__wrapper").css("max-height", "0px"); // Collapse rows
-       }
-     });
-   });
+
+function toggleTable(tableId, button) {
+  var table = document.getElementById(tableId);
+  
+  // Toggle the class for table animation
+  table.classList.toggle("collapsed");
+  table.classList.toggle("expanded");
+  
+  // Toggle the class for button animation
+  button.classList.toggle("expand");
+}
