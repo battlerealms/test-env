@@ -10,8 +10,11 @@ table.collapsed {
   }
 
 table.expanded {
+    table-layout: fixed;
     max-height: 1000px; /* Set max-height for full expansion */
+    max-width: 700px; /* Set max-width for collapsed state */
     transition: max-height 0.5s ease; /* Add smooth transition */
+    table-layout: fixed;
   }
 
 .toggleButtonContainer {
