@@ -6,8 +6,9 @@
 }
 
 table.collapsed {
-    display: block;
+    display: flex;
     overflow: hidden;
+    max-width: 700px; /* Set max-width for collapsed state */
     max-height: 30px; /* 4 rows * 12px (header height) */
     transition: max-height 0.5s ease; /* Add smooth transition */
   }
