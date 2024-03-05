@@ -19,14 +19,3 @@ function toggleTable(tableId, button) {
   // Toggle the class for button animation
   button.classList.toggle("expand");
 }
-
-  // Set width and margins inline
-  if (table.classList.contains("collapsed")) {
-    table.style.width = "700px";
-    table.style.marginLeft = "auto";
-    table.style.marginRight = "auto";
-  } else {
-    table.style.width = "700px";
-    table.style.marginLeft = "auto";
-    table.style.marginRight = "auto";
-  }
