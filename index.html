@@ -247,10 +247,42 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
    </td>
    </tr>
 
-  <!-- Separate Table Open Button -->
+  <!-- Separate Table Open Buttons -->
 	    
-<div class="toggleButtonContainer">
+	<div class="toggleButtonContainer">
   <button class="toggleButton" onclick="toggleTable('DragonTable', this)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+      <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+      <path fill="none" d="M0 0h24v24H0z"/>
+    </svg>
+  </button>
+</div>
+	<div class="toggleButtonContainer">
+  <button class="toggleButton" onclick="toggleTable('SerpentTable', this)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+      <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+      <path fill="none" d="M0 0h24v24H0z"/>
+    </svg>
+  </button>
+</div>
+	<div class="toggleButtonContainer">
+  <button class="toggleButton" onclick="toggleTable('WolfTable', this)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+      <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+      <path fill="none" d="M0 0h24v24H0z"/>
+    </svg>
+  </button>
+</div>
+	<div class="toggleButtonContainer">
+  <button class="toggleButton" onclick="toggleTable('LotusTable', this)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+      <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+      <path fill="none" d="M0 0h24v24H0z"/>
+    </svg>
+  </button>
+</div>
+	<div class="toggleButtonContainer">
+  <button class="toggleButton" onclick="toggleTable('MiscTable', this)">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
       <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
       <path fill="none" d="M0 0h24v24H0z"/>
@@ -442,6 +474,8 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
     <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
 </tr>
 </table>
+	
+<table class="collapsed" id="SerpentTable">
 <tr>
 <td>
    <tr class="xl151547"> 
@@ -647,7 +681,9 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
     <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
     <td class="xl271547" style="color:#FFF;background:#660000"><font size="3">50%</td>
 </tr>
-
+</table>
+	
+<table class="collapsed" id="WolfTable">
 <tr>
 <td>
    <tr class="xl151547"> 
@@ -846,7 +882,9 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
     <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
     <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">125%</td>
   </tr>
-
+</table>
+	
+<table class="collapsed" id="LotusTable">
 <tr>
 <td>
    <tr class="xl161547" style="background:#260026"> 
@@ -1079,7 +1117,10 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
     <td class="xl281547" style="background:#595959"><b>Explosive</b></td>
     <td class="xl281547" style="background:#595959"><b>Magical</b></td>
 </tr>
- <tr>
+</table>
+	
+<table class="collapsed" id="MiscTable">
+<tr>
   <tr class="xl151547"> 
     <td class="xl271547_N"><b>Peasant (any)</td>
         <td class="xl271547_N"><font color="FFD580">Piercing</font></td>
