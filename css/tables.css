@@ -1,17 +1,13 @@
 /* 2024 Table Upgrades... Getting on with the times?*/
 
-   unitable {
+table.collapsed {
     overflow: hidden;
     display: block; /* Ensure the table behaves like a block element */
-  }
-
-
-  unitable.collapsed {
-    max-height: 30px;  /* Header height */
+    max-height: 30px; /* 4 rows * 12px (header height) */
     transition: max-height 0.5s ease; /* Add smooth transition */
   }
 
-  unitable.expanded {
+table.expanded {
     max-height: 1000px; /* Set max-height for full expansion */
     transition: max-height 0.5s ease; /* Add smooth transition */
   }
