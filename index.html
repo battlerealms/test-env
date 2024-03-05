@@ -249,9 +249,18 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
 
   <!-- Separate Table Open Button -->
 	    
-  <button id="openButton" class="coltab-button">Open</button>
+<div class="toggleButtonContainer">
+  <button class="toggleButton" onclick="toggleTable('DragonTable', this)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+      <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+      <path fill="none" d="M0 0h24v24H0z"/>
+    </svg>
+  </button>
+</div>
 
   <!-- New Table Structure -->
+	
+	<table class="collapsed" id="DragonTable">
         <tr>
 	<tr class="xl161547"> 
           <th class="xl281547" style="background:#994C00"><b>Dragon Clan</b></th>
@@ -263,11 +272,7 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
           <th class="xl281547" style="background:#994C00"><b>Explosive</b></th>
           <th class="xl281547" style="background:#994C00"><b>Magical</b></th>
         </tr>
-        <tr class="coltab">
-          <td colspan="8">
-            <div class="table__wrapper">
-              <table class="table-inner">
-                    <td class="xl271547_D" style="width:10.75rem"><b>Spearman</b></td>
+    <td class="xl271547_D" style="width:10.75rem"><b>Spearman</b></td>
     <td class="xl271547_D" style="width:5rem"><font color="FFD580">Piercing</font></td>
     <td class="xl271547_D" style="width:5rem">-</td>
     <td class="xl271547" style="width:5rem;color:#FFF;background:#660000"><font size="3">50%</td>
@@ -437,10 +442,6 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
     <td class="xl271547" style="color:#000000;background:#FFD700"><font size="3">150%</td>
 </tr>
 </table>
-</td>
-</tr>
-</tbody>
-
 <tr>
 <td>
    <tr class="xl151547"> 
