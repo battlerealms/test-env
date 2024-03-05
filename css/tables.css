@@ -1,6 +1,12 @@
 /* 2024 Table Upgrades... Getting on with the times?*/
 
+.container {
+    width: 700px; /* Set a fixed width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
 table.collapsed {
+    display: block;
     overflow: hidden;
     max-height: 30px; /* 4 rows * 12px (header height) */
     transition: max-height 0.5s ease; /* Add smooth transition */
