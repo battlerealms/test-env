@@ -19,7 +19,7 @@
   }
 
 .toggleButtonContainer {
-  position: absolute;
+  position: relative;
   width: 25px;
   height: 25px;
   border-radius: 5px; /* Rounded corners */
@@ -33,6 +33,8 @@
   transition: box-shadow 0.3s ease-out, transform 0.3s ease; /* Add both transitions */
   transform: scale(1); 
 }
+
+
 
 .toggleButtonContainer:hover {
   box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
@@ -55,11 +57,12 @@
 }
 
   .toggleButton {
+    position: relative;
     background-color: transparent;
     border: none;
     cursor: pointer;
     outline: none;
-        color: orange;
+    color: orange;
   }
 
   .toggleButton:hover svg {
