@@ -19,7 +19,7 @@
   }
 
 .toggleButtonContainer {
-  position: relative;
+  position: absolute;
   width: 25px;
   height: 25px;
   border-radius: 5px; /* Rounded corners */
@@ -57,7 +57,7 @@
 }
 
   .toggleButton {
-    position: relative;
+    position: absolute;
     background-color: transparent;
     border: none;
     cursor: pointer;
