@@ -247,8 +247,17 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
 
   <!-- Separate Table Open Buttons -->
 	    
-
-	<div class="toggleButtonContainer" style="right:250px">
+  <!-- New Table Structure -->
+	<table class="unitable collapsed" id="DragonTable" cellspacing="2" width="700" style="margin-left:auto;margin-right:auto;">
+		<div class="toggleButtonContainer" style="left:500px; bottom:20px">
+  <button class="toggleButton" onclick="toggleTable('DragonTable', this)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+      <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+      <path fill="none" d="M0 0h24v24H0z"/>
+    </svg>
+  </button>
+</div>
+			<div class="toggleButtonContainer" style="right:250px">
   <button class="toggleButton" onclick="toggleTable('SerpentTable', this)">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
       <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
@@ -274,17 +283,6 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
 </div>
 	<div class="toggleButtonContainer" style="right:900px">
   <button class="toggleButton" onclick="toggleTable('MiscTable', this)">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-      <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
-      <path fill="none" d="M0 0h24v24H0z"/>
-    </svg>
-  </button>
-</div>
-
-  <!-- New Table Structure -->
-	<table class="unitable collapsed" id="DragonTable" cellspacing="2" width="700" style="margin-left:auto;margin-right:auto;">
-		<div class="toggleButtonContainer" style="left:20px; bottom:20px">
-  <button class="toggleButton" onclick="toggleTable('DragonTable', this)">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
       <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
       <path fill="none" d="M0 0h24v24H0z"/>
