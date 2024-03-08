@@ -156,11 +156,12 @@ Steam Early Access version of Battle Realms: Zen Edition<br>[Released: December 
       <div class="tab" onclick="showContent('topic2')">Piercing Damage Redesign (1.58.3)</div>
       <div class="tab" onclick="showContent('topic3')">Poison</div>
       <div class="tab" onclick="showContent('topic4')">Siege vs Non Siege</div>
-      <div class="tab" onclick="showContent('topic5')">Flammabity</div>
+      <div class="tab" onclick="showContent('topic5')">Flammability</div>
       <div class="tab" onclick="showContent('topic6')">Terrain & Environment</div>
       <div class="tab" onclick="showContent('topic7')">Yin & Yang</div>
       <div class="tab" onclick="showContent('topic8')">Peasant Generation</div>
       <div class="tab" onclick="showContent('topic9')">Horses</div>
+      <div class="tab" onclick="showContent('topic10')">Effects of Height</div>
     </div>
     <div class="content-wrapper">
       <div class="content">
@@ -204,12 +205,10 @@ Attacking buildings with fire when it's raining will be much less effective, rai
         </div>
         <div id="topic6">
           <h2>Terrain & Environment</h2>
-          <p>☯ <b>Height (dis)Advantage</b>: TL;DR: The taller unit gains an advantage.<br><br>Height advantage is a damage bonus (or penalty) obtained by units relative to the target they are attacking. This is related to unit heights (base models and their positioning).<br><br>The maximum height damage bonus that can be obtained by units is <b>+25%</b> and the maximum penalty is <b>-25%</b>.<br><br>For example:</br> Warlock vs Archer duking it out on flat terrain will result in Warlock gaining <b>~12% bonus damage</b> against archer because of the height advantage.<br>Archer will be able to neglect that and even come on top (by a tiny bit) if he gets on top of a horse since his height is now above Warlock's.<br>Warlock will be at a big disadvantage fighting <b>the Shale Lord</b> in melee on even ground - the tallest unit in the game. That goes for pretty much any unit. <br><br>Horses, Towers and terrain (cliffs, hills etc.) provide a way to get "above" your enemy and neglect that, and even get bonus damage as a result. Death from above!
-
-<br><br>
+         
 ☯ <b>Environment</b>: Units will have decreased speed when climbing hills (increased speed when going down), going through water or forest areas. Trees also obscure units' LOS. There are exceptions for certain unique units. All units will alert birds in the trees when running, essentially giving their position away to the enemy.<br><br>
 
-When it's raining, all buildings will be extinguished and all rice crops will be watered (thus growing back faster). When it's showing, rice crops will be growing back at a decreased rate.</p>
+When it's raining, all buildings will be extinguished and all rice crops will be watered (thus growing back faster). When it's snowing, rice crops will be growing back at a decreased rate.</p>
         </div>
         <div id="topic7">
           <h2>Yin & Yang</h2>
@@ -239,6 +238,13 @@ Tamed horses without a host can be taken by anyone. Steal enemy horses and look 
 Wolf peasants will always feed horses to their wolves. Wolf units can attack other enemy clans' horses that have no rider.
       </p>
         </div>
+	<div id="topic10">
+       <h2>Effects of Height</h2>
+       <p>
+ <p>The taller unit gains an advantage.<br><br>Height advantage is a damage bonus (or penalty) obtained by units relative to the target they are attacking. This is related to unit heights (base models and their positioning).<br><br>The maximum height damage bonus that can be obtained by units is <b>+25%</b> and the maximum penalty is <b>-25%</b>.<br><br>For example:</br> Warlock vs Archer duking it out on flat terrain will result in Warlock gaining <b>~12% bonus damage</b> against archer because of the height advantage.<br>Archer will be able to neglect that and even come on top (by a tiny bit) if he gets on top of a horse since his height is now above Warlock's.<br>Warlock will be at a big disadvantage fighting <b>the Shale Lord</b> in melee on even ground - the tallest unit in the game. That goes for pretty much any unit. <br><br>Horses, Towers and terrain (cliffs, hills etc.) provide a way to get "above" your enemy and neglect that, and even get bonus damage as a result. Death from above!
+<br><br>
+      </p>
+        </div>
       </div>
     </div>
      </div>
@@ -247,14 +253,10 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
 	
   <!-- New Table Structure -->
 	
-	<table class="unitable collapsed" id="DragonTable" cellspacing="2" width="700" style="margin-left:auto;margin-right:auto;">
-		
- <!-- Separate Table Open Buttons -->
-		
-<table>		
+<table class="unitable collapsed" id="DragonTable" cellspacing="2" width="700" style="margin-left:auto;margin-right:auto;">		
 <tr>
    <tr class="xl161547">
-		<div class="toggleButtonContainer" style="left:20px; bottom:0px">
+		<div class="toggleButtonContainer" style="left:250px; bottom:0px">
   <button class="toggleButton" onclick="toggleTable('DragonTable', this)">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
       <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
@@ -445,7 +447,7 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
 <table class="unitable collapsed" id="SerpentTable" cellspacing="2" width="700" style="margin-left:auto;margin-right:auto;">
 <tr>
    <tr class="xl151547"> 
-	   <div class="toggleButtonContainer" style="left:20px; bottom:-20px">
+	   <div class="toggleButtonContainer" style="left:250px; bottom:-20px">
   <button class="toggleButton" onclick="toggleTable('SerpentTable', this)">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
       <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
@@ -660,7 +662,7 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
 <table class="unitable collapsed" id="WolfTable" cellspacing="2" width="700" style="margin-left:auto;margin-right:auto;">
 <tr>
    <tr class="xl151547"> 
-	   	<div class="toggleButtonContainer" style="left:20px; bottom:-40px">
+	   	<div class="toggleButtonContainer" style="left:250px; bottom:-40px">
   <button class="toggleButton" onclick="toggleTable('WolfTable', this)">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
       <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
@@ -867,7 +869,7 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
 <table class="unitable collapsed" id="LotusTable" cellspacing="2" width="700" style="margin-left:auto;margin-right:auto;">
 <tr>
    <tr class="xl161547" style="background:#260026"> 
-	   	<div class="toggleButtonContainer" style="left:20px; bottom:-60px">
+	   	<div class="toggleButtonContainer" style="left:250px; bottom:-60px">
   <button class="toggleButton" onclick="toggleTable('LotusTable', this)">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
       <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
@@ -1095,7 +1097,7 @@ Wolf peasants will always feed horses to their wolves. Wolf units can attack oth
 <table class="unitable collapsed" id="MiscTable" cellspacing="2" width="700" style="margin-left:auto;margin-right:auto;">
 <tr>
    <tr class="xl151547"> 
-	   	   	<div class="toggleButtonContainer" style="left:20px; bottom:-80px">
+	   	   	<div class="toggleButtonContainer" style="left:250px; bottom:-80px">
   <button class="toggleButton" onclick="toggleTable('MiscTable', this)">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
       <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
