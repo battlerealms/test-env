@@ -29,6 +29,15 @@
   box-shadow: 0 0 0px rgba(255, 165, 0, 0.7);
   transition: box-shadow 0.3s ease-out, transform 0.3s ease; /* Add both transitions */
   transform: scale(1); 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 5vw; /* 5% of viewport width */
+  height: 5vw; /* 5% of viewport height */
+  top: 5vh; /* 5% down from the top of viewport */
+  left: 5vw; /* 5% from the left of viewport */
 }
 
 
